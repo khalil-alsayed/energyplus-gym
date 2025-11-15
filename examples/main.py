@@ -101,7 +101,7 @@ output_root = Path(_resolve_output_dir(None))  # your resolver
 
 checkpoint_dir = _resolve_output_dir(None, default_name="runs/checkpoints")
 
-#%% traditional training (entire year)--------------------------------------------------------------------------------------------------------------------------
+#%% Adaptation test--------------------------------------------------------------------------------------------------------------------------
 if __name__ == '__main__':
     
     
@@ -251,7 +251,7 @@ if __name__ == '__main__':
     plt.show()
     
     
-#%%Deployment Q-transformer
+#%%Deployment Q-transformer (Adaptation test)
 
 number_of_days_to_presents=10
 
@@ -318,7 +318,7 @@ while not done:
 print("Score (entire run): ", score)
 env.close()
     
-#%% graphe version 2
+
 
 # -------------------------------------------------------------
 #  CONFIGURATION  – edit here if you want different colours etc.

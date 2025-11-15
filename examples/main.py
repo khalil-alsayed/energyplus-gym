@@ -101,7 +101,7 @@ output_root = Path(_resolve_output_dir(None))  # your resolver
 
 checkpoint_dir = _resolve_output_dir(None, default_name="runs/checkpoints")
 
-#%% Adaptation test--------------------------------------------------------------------------------------------------------------------------
+#%% Adaptation test (Q-transformer)--------------------------------------------------------------------------------------------------------------------------
 if __name__ == '__main__':
     
     

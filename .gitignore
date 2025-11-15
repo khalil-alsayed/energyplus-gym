@@ -1,0 +1,22 @@
+# Python build/cache
+__*.pyc
+build/
+dist/
+*.egg-info/
+
+# Keep folder, ignore its contents
+/runs/*
+!/runs/.gitkeep
+
+/eplus_outputs/*
+!/eplus_outputs/.gitkeep
+
+# Large artifacts
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.h5
+*.npz
+*.tar
+*.zip

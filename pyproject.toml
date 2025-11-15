@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eplus-gym"
+version = "0.1.0"
+description = "EnergyPlus environments for Gymnasium"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Your Name", email = "you@example.com" }]
+
+# These will be installed automatically for your users
+dependencies = [
+  "gymnasium>=0.28,<1.0",
+  "numpy>=1.23,<2.0",
+  "pandas>=1.5,<3.0"
+]
+# NOTE: EnergyPlus itself is not installed by pip. Users install it separately.
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["eplus_gym*"]
+
+# Ship your IDF/EPW files inside the installable package
+[tool.setuptools.package-data]
+"eplus_gym.envs.assets" = ["*.idf", "*.epw", "*.csv"]

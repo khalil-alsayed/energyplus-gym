@@ -1,0 +1,376 @@
+
+ Meters for 14,TZ_AMPHITHEATER 189.1-2009 - SECSCHL - AUDITORIUM - CZ4-8 LIGHTS 75.0 PERCENT REDUCTION:Lights Electricity Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:TZ_AMPHITHEATER [J]
+  OnMeter=Electricity:SpaceType:GENERAL [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:TZ_AMPHITHEATER [J]
+  OnMeter=InteriorLights:Electricity:SpaceType:GENERAL [J]
+  OnMeter=General:InteriorLights:Electricity [J]
+  OnMeter=General:InteriorLights:Electricity:Zone:TZ_AMPHITHEATER [J]
+  OnMeter=General:InteriorLights:Electricity:SpaceType:GENERAL [J]
+
+ Meters for 135,TZ_AMPHITHEATER 189.1-2009 - SECSCHL - AUDITORIUM - CZ4-8 ELECTRIC EQUIPMENT 84.0 PERCENT REDUCTION:Electric Equipment Electricity Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:TZ_AMPHITHEATER [J]
+  OnMeter=Electricity:SpaceType:GENERAL [J]
+  OnMeter=InteriorEquipment:Electricity [J]
+  OnMeter=InteriorEquipment:Electricity:Zone:TZ_AMPHITHEATER [J]
+  OnMeter=InteriorEquipment:Electricity:SpaceType:GENERAL [J]
+  OnMeter=General:InteriorEquipment:Electricity [J]
+  OnMeter=General:InteriorEquipment:Electricity:Zone:TZ_AMPHITHEATER [J]
+  OnMeter=General:InteriorEquipment:Electricity:SpaceType:GENERAL [J]
+
+ Meters for 209,TZ_AMPHITHEATER:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:TZ_AMPHITHEATER [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:TZ_AMPHITHEATER [J]
+  OnMeter=General:Heating:EnergyTransfer [J]
+  OnMeter=General:Heating:EnergyTransfer:Zone:TZ_AMPHITHEATER [J]
+
+ Meters for 294,TZ_AMPHITHEATER:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:TZ_AMPHITHEATER [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:TZ_AMPHITHEATER [J]
+  OnMeter=General:Cooling:EnergyTransfer [J]
+  OnMeter=General:Cooling:EnergyTransfer:Zone:TZ_AMPHITHEATER [J]
+
+ Meters for 344,DISTRICT HEATING:District Heating Water Energy [J]
+  OnMeter=DistrictHeatingWater:Facility [J]
+  OnMeter=DistrictHeatingWater:Plant [J]
+  OnMeter=Heating:DistrictHeatingWater [J]
+  OnMeter=General:Heating:DistrictHeatingWater [J]
+
+ Meters for 393,Whole Building:Facility Total Purchased Electricity Energy [J]
+  OnMeter=ElectricityPurchased:Facility [J]
+  OnMeter=ElectricityPurchased:Plant [J]
+  OnMeter=Cogeneration:ElectricityPurchased [J]
+  OnMeter=General:Cogeneration:ElectricityPurchased [J]
+
+ Meters for 442,Whole Building:Facility Total Surplus Electricity Energy [J]
+  OnMeter=ElectricitySurplusSold:Facility [J]
+  OnMeter=ElectricitySurplusSold:Plant [J]
+  OnMeter=Cogeneration:ElectricitySurplusSold [J]
+  OnMeter=General:Cogeneration:ElectricitySurplusSold [J]
+
+ Meters for 491,Whole Building:Facility Net Purchased Electricity Energy [J]
+  OnMeter=ElectricityNet:Facility [J]
+  OnMeter=ElectricityNet:Plant [J]
+  OnMeter=Cogeneration:ElectricityNet [J]
+  OnMeter=General:Cogeneration:ElectricityNet [J]
+
+ Meters for 545,CTA AUDITOIRE 240P HC:Heating Coil Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=HeatingCoils:EnergyTransfer [J]
+
+ Meters for 570,CTA AUDITOIRE 240P HC:Heating Coil Source Side Heat Transfer Energy [J]
+  OnMeter=PlantLoopHeatingDemand:Facility [J]
+  OnMeter=PlantLoopHeatingDemand:HVAC [J]
+  OnMeter=HeatingCoils:PlantLoopHeatingDemand [J]
+
+ Meters for 607,CTA AUDITOIRE 240P EXAUST FAN:Fan Electricity Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=General:Fans:Electricity [J]
+
+ Meters for 644,CTA AUDITOIRE 240P SUPPLY FAN:Fan Electricity Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=General:Fans:Electricity [J]
+
+ Meters for 645,DIRECT EVAP COOLER:Evaporative Cooler Electricity Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Cooling:Electricity [J]
+  OnMeter=General:Cooling:Electricity [J]
+
+ Meters for 670,DIRECT EVAP COOLER:Evaporative Cooler Water Volume [m3]
+  OnMeter=Water:Facility [m3]
+  OnMeter=Water:HVAC [m3]
+  OnMeter=Cooling:Water [m3]
+  OnMeter=General:Cooling:Water [m3]
+
+ Meters for 719,DIRECT EVAP COOLER:Evaporative Cooler Mains Water Volume [m3]
+  OnMeter=MainsWater:Facility [m3]
+  OnMeter=MainsWater:HVAC [m3]
+  OnMeter=Cooling:MainsWater [m3]
+  OnMeter=General:Cooling:MainsWater [m3]
+
+ Meters for 768,AIR-TO-AIR PLATE HX:Heat Exchanger Total Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=HeatRecoveryForHeating:EnergyTransfer [J]
+
+ Meters for 781,AIR-TO-AIR PLATE HX:Heat Exchanger Total Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=HeatRecoveryForCooling:EnergyTransfer [J]
+
+ Meters for 794,AIR-TO-AIR PLATE HX:Heat Exchanger Electricity Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=HeatRecovery:Electricity [J]
+  OnMeter=General:HeatRecovery:Electricity [J]
+
+ Meters for 819,PUMP VARIABLE SPEED 1:Pump Electricity Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Plant [J]
+  OnMeter=Pumps:Electricity [J]
+  OnMeter=General:Pumps:Electricity [J]
+
+ Meters for 856,Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass [kg]
+  OnMeter=Carbon Equivalent:Facility [kg]
+  OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ Meters for 881,Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass [kg]
+  OnMeter=Carbon Equivalent:Facility [kg]
+  OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ Meters for 882,Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass [kg]
+  OnMeter=Carbon Equivalent:Facility [kg]
+  OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ For Meter=Electricity:Facility [J], ResourceType=Electricity, contents are:
+  TZ_AMPHITHEATER 189.1-2009 - SECSCHL - AUDITORIUM - CZ4-8 LIGHTS 75.0 PERCENT REDUCTION:Lights Electricity Energy
+  TZ_AMPHITHEATER 189.1-2009 - SECSCHL - AUDITORIUM - CZ4-8 ELECTRIC EQUIPMENT 84.0 PERCENT REDUCTION:Electric Equipment Electricity Energy
+  CTA AUDITOIRE 240P EXAUST FAN:Fan Electricity Energy
+  CTA AUDITOIRE 240P SUPPLY FAN:Fan Electricity Energy
+  DIRECT EVAP COOLER:Evaporative Cooler Electricity Energy
+  AIR-TO-AIR PLATE HX:Heat Exchanger Electricity Energy
+  PUMP VARIABLE SPEED 1:Pump Electricity Energy
+
+ For Meter=Electricity:Building [J], ResourceType=Electricity, Group=Building, contents are:
+  TZ_AMPHITHEATER 189.1-2009 - SECSCHL - AUDITORIUM - CZ4-8 LIGHTS 75.0 PERCENT REDUCTION:Lights Electricity Energy
+  TZ_AMPHITHEATER 189.1-2009 - SECSCHL - AUDITORIUM - CZ4-8 ELECTRIC EQUIPMENT 84.0 PERCENT REDUCTION:Electric Equipment Electricity Energy
+
+ For Meter=Electricity:Zone:TZ_AMPHITHEATER [J], ResourceType=Electricity, Group=Zone, contents are:
+  TZ_AMPHITHEATER 189.1-2009 - SECSCHL - AUDITORIUM - CZ4-8 LIGHTS 75.0 PERCENT REDUCTION:Lights Electricity Energy
+  TZ_AMPHITHEATER 189.1-2009 - SECSCHL - AUDITORIUM - CZ4-8 ELECTRIC EQUIPMENT 84.0 PERCENT REDUCTION:Electric Equipment Electricity Energy
+
+ For Meter=Electricity:SpaceType:GENERAL [J], ResourceType=Electricity, Group=SpaceType, contents are:
+  TZ_AMPHITHEATER 189.1-2009 - SECSCHL - AUDITORIUM - CZ4-8 LIGHTS 75.0 PERCENT REDUCTION:Lights Electricity Energy
+  TZ_AMPHITHEATER 189.1-2009 - SECSCHL - AUDITORIUM - CZ4-8 ELECTRIC EQUIPMENT 84.0 PERCENT REDUCTION:Electric Equipment Electricity Energy
+
+ For Meter=InteriorLights:Electricity [J], ResourceType=Electricity, EndUse=InteriorLights, contents are:
+  TZ_AMPHITHEATER 189.1-2009 - SECSCHL - AUDITORIUM - CZ4-8 LIGHTS 75.0 PERCENT REDUCTION:Lights Electricity Energy
+
+ For Meter=InteriorLights:Electricity:Zone:TZ_AMPHITHEATER [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  TZ_AMPHITHEATER 189.1-2009 - SECSCHL - AUDITORIUM - CZ4-8 LIGHTS 75.0 PERCENT REDUCTION:Lights Electricity Energy
+
+ For Meter=InteriorLights:Electricity:SpaceType:GENERAL [J], ResourceType=Electricity, EndUse=InteriorLights, Group=SpaceType, contents are:
+  TZ_AMPHITHEATER 189.1-2009 - SECSCHL - AUDITORIUM - CZ4-8 LIGHTS 75.0 PERCENT REDUCTION:Lights Electricity Energy
+
+ For Meter=General:InteriorLights:Electricity [J], ResourceType=Electricity, EndUse=InteriorLights, contents are:
+  TZ_AMPHITHEATER 189.1-2009 - SECSCHL - AUDITORIUM - CZ4-8 LIGHTS 75.0 PERCENT REDUCTION:Lights Electricity Energy
+
+ For Meter=General:InteriorLights:Electricity:Zone:TZ_AMPHITHEATER [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  TZ_AMPHITHEATER 189.1-2009 - SECSCHL - AUDITORIUM - CZ4-8 LIGHTS 75.0 PERCENT REDUCTION:Lights Electricity Energy
+
+ For Meter=General:InteriorLights:Electricity:SpaceType:GENERAL [J], ResourceType=Electricity, EndUse=InteriorLights, Group=SpaceType, contents are:
+  TZ_AMPHITHEATER 189.1-2009 - SECSCHL - AUDITORIUM - CZ4-8 LIGHTS 75.0 PERCENT REDUCTION:Lights Electricity Energy
+
+ For Meter=InteriorEquipment:Electricity [J], ResourceType=Electricity, EndUse=InteriorEquipment, contents are:
+  TZ_AMPHITHEATER 189.1-2009 - SECSCHL - AUDITORIUM - CZ4-8 ELECTRIC EQUIPMENT 84.0 PERCENT REDUCTION:Electric Equipment Electricity Energy
+
+ For Meter=InteriorEquipment:Electricity:Zone:TZ_AMPHITHEATER [J], ResourceType=Electricity, EndUse=InteriorEquipment, Group=Zone, contents are:
+  TZ_AMPHITHEATER 189.1-2009 - SECSCHL - AUDITORIUM - CZ4-8 ELECTRIC EQUIPMENT 84.0 PERCENT REDUCTION:Electric Equipment Electricity Energy
+
+ For Meter=InteriorEquipment:Electricity:SpaceType:GENERAL [J], ResourceType=Electricity, EndUse=InteriorEquipment, Group=SpaceType, contents are:
+  TZ_AMPHITHEATER 189.1-2009 - SECSCHL - AUDITORIUM - CZ4-8 ELECTRIC EQUIPMENT 84.0 PERCENT REDUCTION:Electric Equipment Electricity Energy
+
+ For Meter=General:InteriorEquipment:Electricity [J], ResourceType=Electricity, EndUse=InteriorEquipment, contents are:
+  TZ_AMPHITHEATER 189.1-2009 - SECSCHL - AUDITORIUM - CZ4-8 ELECTRIC EQUIPMENT 84.0 PERCENT REDUCTION:Electric Equipment Electricity Energy
+
+ For Meter=General:InteriorEquipment:Electricity:Zone:TZ_AMPHITHEATER [J], ResourceType=Electricity, EndUse=InteriorEquipment, Group=Zone, contents are:
+  TZ_AMPHITHEATER 189.1-2009 - SECSCHL - AUDITORIUM - CZ4-8 ELECTRIC EQUIPMENT 84.0 PERCENT REDUCTION:Electric Equipment Electricity Energy
+
+ For Meter=General:InteriorEquipment:Electricity:SpaceType:GENERAL [J], ResourceType=Electricity, EndUse=InteriorEquipment, Group=SpaceType, contents are:
+  TZ_AMPHITHEATER 189.1-2009 - SECSCHL - AUDITORIUM - CZ4-8 ELECTRIC EQUIPMENT 84.0 PERCENT REDUCTION:Electric Equipment Electricity Energy
+
+ For Meter=EnergyTransfer:Facility [J], ResourceType=EnergyTransfer, contents are:
+  TZ_AMPHITHEATER:Zone Air System Sensible Heating Energy
+  TZ_AMPHITHEATER:Zone Air System Sensible Cooling Energy
+  CTA AUDITOIRE 240P HC:Heating Coil Heating Energy
+  AIR-TO-AIR PLATE HX:Heat Exchanger Total Heating Energy
+  AIR-TO-AIR PLATE HX:Heat Exchanger Total Cooling Energy
+
+ For Meter=EnergyTransfer:Building [J], ResourceType=EnergyTransfer, Group=Building, contents are:
+  TZ_AMPHITHEATER:Zone Air System Sensible Heating Energy
+  TZ_AMPHITHEATER:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:TZ_AMPHITHEATER [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  TZ_AMPHITHEATER:Zone Air System Sensible Heating Energy
+  TZ_AMPHITHEATER:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=Heating, contents are:
+  TZ_AMPHITHEATER:Zone Air System Sensible Heating Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:TZ_AMPHITHEATER [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  TZ_AMPHITHEATER:Zone Air System Sensible Heating Energy
+
+ For Meter=General:Heating:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=Heating, contents are:
+  TZ_AMPHITHEATER:Zone Air System Sensible Heating Energy
+
+ For Meter=General:Heating:EnergyTransfer:Zone:TZ_AMPHITHEATER [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  TZ_AMPHITHEATER:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=Cooling, contents are:
+  TZ_AMPHITHEATER:Zone Air System Sensible Cooling Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:TZ_AMPHITHEATER [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  TZ_AMPHITHEATER:Zone Air System Sensible Cooling Energy
+
+ For Meter=General:Cooling:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=Cooling, contents are:
+  TZ_AMPHITHEATER:Zone Air System Sensible Cooling Energy
+
+ For Meter=General:Cooling:EnergyTransfer:Zone:TZ_AMPHITHEATER [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  TZ_AMPHITHEATER:Zone Air System Sensible Cooling Energy
+
+ For Meter=DistrictHeatingWater:Facility [J], ResourceType=DistrictHeatingWater, contents are:
+  DISTRICT HEATING:District Heating Water Energy
+
+ For Meter=DistrictHeatingWater:Plant [J], ResourceType=DistrictHeatingWater, Group=Plant, contents are:
+  DISTRICT HEATING:District Heating Water Energy
+
+ For Meter=Heating:DistrictHeatingWater [J], ResourceType=DistrictHeatingWater, EndUse=Heating, contents are:
+  DISTRICT HEATING:District Heating Water Energy
+
+ For Meter=General:Heating:DistrictHeatingWater [J], ResourceType=DistrictHeatingWater, EndUse=Heating, contents are:
+  DISTRICT HEATING:District Heating Water Energy
+
+ For Meter=ElectricityPurchased:Facility [J], ResourceType=ElectricityPurchased, contents are:
+  Whole Building:Facility Total Purchased Electricity Energy
+
+ For Meter=ElectricityPurchased:Plant [J], ResourceType=ElectricityPurchased, Group=Plant, contents are:
+  Whole Building:Facility Total Purchased Electricity Energy
+
+ For Meter=Cogeneration:ElectricityPurchased [J], ResourceType=ElectricityPurchased, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Total Purchased Electricity Energy
+
+ For Meter=General:Cogeneration:ElectricityPurchased [J], ResourceType=ElectricityPurchased, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Total Purchased Electricity Energy
+
+ For Meter=ElectricitySurplusSold:Facility [J], ResourceType=ElectricitySurplusSold, contents are:
+  Whole Building:Facility Total Surplus Electricity Energy
+
+ For Meter=ElectricitySurplusSold:Plant [J], ResourceType=ElectricitySurplusSold, Group=Plant, contents are:
+  Whole Building:Facility Total Surplus Electricity Energy
+
+ For Meter=Cogeneration:ElectricitySurplusSold [J], ResourceType=ElectricitySurplusSold, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Total Surplus Electricity Energy
+
+ For Meter=General:Cogeneration:ElectricitySurplusSold [J], ResourceType=ElectricitySurplusSold, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Total Surplus Electricity Energy
+
+ For Meter=ElectricityNet:Facility [J], ResourceType=ElectricityNet, contents are:
+  Whole Building:Facility Net Purchased Electricity Energy
+
+ For Meter=ElectricityNet:Plant [J], ResourceType=ElectricityNet, Group=Plant, contents are:
+  Whole Building:Facility Net Purchased Electricity Energy
+
+ For Meter=Cogeneration:ElectricityNet [J], ResourceType=ElectricityNet, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Net Purchased Electricity Energy
+
+ For Meter=General:Cogeneration:ElectricityNet [J], ResourceType=ElectricityNet, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Net Purchased Electricity Energy
+
+ For Meter=EnergyTransfer:HVAC [J], ResourceType=EnergyTransfer, Group=HVAC, contents are:
+  CTA AUDITOIRE 240P HC:Heating Coil Heating Energy
+  AIR-TO-AIR PLATE HX:Heat Exchanger Total Heating Energy
+  AIR-TO-AIR PLATE HX:Heat Exchanger Total Cooling Energy
+
+ For Meter=HeatingCoils:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=HeatingCoils, contents are:
+  CTA AUDITOIRE 240P HC:Heating Coil Heating Energy
+
+ For Meter=PlantLoopHeatingDemand:Facility [J], ResourceType=PlantLoopHeatingDemand, contents are:
+  CTA AUDITOIRE 240P HC:Heating Coil Source Side Heat Transfer Energy
+
+ For Meter=PlantLoopHeatingDemand:HVAC [J], ResourceType=PlantLoopHeatingDemand, Group=HVAC, contents are:
+  CTA AUDITOIRE 240P HC:Heating Coil Source Side Heat Transfer Energy
+
+ For Meter=HeatingCoils:PlantLoopHeatingDemand [J], ResourceType=PlantLoopHeatingDemand, EndUse=HeatingCoils, contents are:
+  CTA AUDITOIRE 240P HC:Heating Coil Source Side Heat Transfer Energy
+
+ For Meter=Electricity:HVAC [J], ResourceType=Electricity, Group=HVAC, contents are:
+  CTA AUDITOIRE 240P EXAUST FAN:Fan Electricity Energy
+  CTA AUDITOIRE 240P SUPPLY FAN:Fan Electricity Energy
+  DIRECT EVAP COOLER:Evaporative Cooler Electricity Energy
+  AIR-TO-AIR PLATE HX:Heat Exchanger Electricity Energy
+
+ For Meter=Fans:Electricity [J], ResourceType=Electricity, EndUse=Fans, contents are:
+  CTA AUDITOIRE 240P EXAUST FAN:Fan Electricity Energy
+  CTA AUDITOIRE 240P SUPPLY FAN:Fan Electricity Energy
+
+ For Meter=General:Fans:Electricity [J], ResourceType=Electricity, EndUse=Fans, contents are:
+  CTA AUDITOIRE 240P EXAUST FAN:Fan Electricity Energy
+  CTA AUDITOIRE 240P SUPPLY FAN:Fan Electricity Energy
+
+ For Meter=Cooling:Electricity [J], ResourceType=Electricity, EndUse=Cooling, contents are:
+  DIRECT EVAP COOLER:Evaporative Cooler Electricity Energy
+
+ For Meter=General:Cooling:Electricity [J], ResourceType=Electricity, EndUse=Cooling, contents are:
+  DIRECT EVAP COOLER:Evaporative Cooler Electricity Energy
+
+ For Meter=Water:Facility [m3], ResourceType=Water, contents are:
+  DIRECT EVAP COOLER:Evaporative Cooler Water Volume
+
+ For Meter=Water:HVAC [m3], ResourceType=Water, Group=HVAC, contents are:
+  DIRECT EVAP COOLER:Evaporative Cooler Water Volume
+
+ For Meter=Cooling:Water [m3], ResourceType=Water, EndUse=Cooling, contents are:
+  DIRECT EVAP COOLER:Evaporative Cooler Water Volume
+
+ For Meter=General:Cooling:Water [m3], ResourceType=Water, EndUse=Cooling, contents are:
+  DIRECT EVAP COOLER:Evaporative Cooler Water Volume
+
+ For Meter=MainsWater:Facility [m3], ResourceType=MainsWater, contents are:
+  DIRECT EVAP COOLER:Evaporative Cooler Mains Water Volume
+
+ For Meter=MainsWater:HVAC [m3], ResourceType=MainsWater, Group=HVAC, contents are:
+  DIRECT EVAP COOLER:Evaporative Cooler Mains Water Volume
+
+ For Meter=Cooling:MainsWater [m3], ResourceType=MainsWater, EndUse=Cooling, contents are:
+  DIRECT EVAP COOLER:Evaporative Cooler Mains Water Volume
+
+ For Meter=General:Cooling:MainsWater [m3], ResourceType=MainsWater, EndUse=Cooling, contents are:
+  DIRECT EVAP COOLER:Evaporative Cooler Mains Water Volume
+
+ For Meter=HeatRecoveryForHeating:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=HeatRecoveryForHeating, contents are:
+  AIR-TO-AIR PLATE HX:Heat Exchanger Total Heating Energy
+
+ For Meter=HeatRecoveryForCooling:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=HeatRecoveryForCooling, contents are:
+  AIR-TO-AIR PLATE HX:Heat Exchanger Total Cooling Energy
+
+ For Meter=HeatRecovery:Electricity [J], ResourceType=Electricity, EndUse=HeatRecovery, contents are:
+  AIR-TO-AIR PLATE HX:Heat Exchanger Electricity Energy
+
+ For Meter=General:HeatRecovery:Electricity [J], ResourceType=Electricity, EndUse=HeatRecovery, contents are:
+  AIR-TO-AIR PLATE HX:Heat Exchanger Electricity Energy
+
+ For Meter=Electricity:Plant [J], ResourceType=Electricity, Group=Plant, contents are:
+  PUMP VARIABLE SPEED 1:Pump Electricity Energy
+
+ For Meter=Pumps:Electricity [J], ResourceType=Electricity, EndUse=Pumps, contents are:
+  PUMP VARIABLE SPEED 1:Pump Electricity Energy
+
+ For Meter=General:Pumps:Electricity [J], ResourceType=Electricity, EndUse=Pumps, contents are:
+  PUMP VARIABLE SPEED 1:Pump Electricity Energy
+
+ For Meter=Carbon Equivalent:Facility [kg], ResourceType=Carbon Equivalent, contents are:
+  Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass
+
+ For Meter=CarbonEquivalentEmissions:Carbon Equivalent [kg], ResourceType=Carbon Equivalent, EndUse=CarbonEquivalentEmissions, contents are:
+  Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass

@@ -1,0 +1,93 @@
+Program Version,EnergyPlus, Version 25.1.0-68a4a7c774, YMD=2025.11.08 11:51,
+   ** Warning ** ProcessScheduleInput: Schedule:Constant = ALWAYS ON DISCRETE
+   **   ~~~   ** Schedule Type Limits Name is empty.
+   **   ~~~   ** Schedule will not be validated.
+   ** Warning ** ProcessScheduleInput: Schedule:Constant = ALWAYS ON DISCRETE 3
+   **   ~~~   ** Schedule Type Limits Name is empty.
+   **   ~~~   ** Schedule will not be validated.
+   ** Warning ** ProcessScheduleInput: Schedule:Constant = ALWAYS OFF DISCRETE
+   **   ~~~   ** Schedule Type Limits Name is empty.
+   **   ~~~   ** Schedule will not be validated.
+   ** Warning ** ProcessScheduleInput: Schedule:Constant = ALWAYS ON CONTINUOUS
+   **   ~~~   ** Schedule Type Limits Name is empty.
+   **   ~~~   ** Schedule will not be validated.
+   ** Warning ** ProcessScheduleInput: Schedule:Constant = ALWAYS ON DISCRETE 4
+   **   ~~~   ** Schedule Type Limits Name is empty.
+   **   ~~~   ** Schedule will not be validated.
+   ** Warning ** ProcessScheduleInput: Schedule:Constant = ALWAYS ON DISCRETE 5
+   **   ~~~   ** Schedule Type Limits Name is empty.
+   **   ~~~   ** Schedule will not be validated.
+   ** Warning ** ProcessScheduleInput: Schedule:Constant = ALWAYS ON DISCRETE 6
+   **   ~~~   ** Schedule Type Limits Name is empty.
+   **   ~~~   ** Schedule will not be validated.
+   ** Warning ** Sizing:Zone="TZ_AMPHITHEATER" has invalid data.
+   **   ~~~   ** ... incorrect Zone Cooling Design Supply Air Temperature=[-2.00] is less than [0.00]
+   **   ~~~   ** Please check your input to make sure this is correct.
+   ************* Beginning Zone Sizing Calculations
+   ** Warning ** RunPeriod: object=2020, start weekday (WEDNESDAY) does not match the start year (2020), corrected to SATURDAY.
+   ** Warning ** Weather file location will be used rather than entered (IDF) Location object.
+   **   ~~~   ** ..Location object=MILIANA
+   **   ~~~   ** ..Weather File Location=Luxembourg AP LU LUX ISD-TMYx WMO#=065900
+   **   ~~~   ** ..due to location differences, Latitude difference=[13.32] degrees, Longitude difference=[3.98] degrees.
+   **   ~~~   ** ..Time Zone difference=[1.0] hour(s), Elevation difference=[47.41] percent, [339.00] meters.
+   ** Warning ** GetHTSurfaceData: Surfaces with interface to Ground found but no "Ground Temperatures" were input.
+   **   ~~~   ** Found first in surface=SURFACE 6
+   **   ~~~   ** Defaults, constant throughout the year of (18.0) will be used.
+   ** Warning ** CheckUsedConstructions: There are 25 nominally unused constructions in input.
+   **   ~~~   ** For explicit details on each unused construction, use Output:Diagnostics,DisplayExtraWarnings;
+   ** Warning ** GetSimpleAirModelInputs: ZoneInfiltration:DesignFlowRate="TZ_AMPHITHEATER 189.1-2009 - SECSCHL - AUDITORIUM - CZ4-8 INFILTRATION 77.0 PERCENT REDUCTION", Design Flow Rate Calculation Method specifies Flow Rate per Exterior Surface Area, but Exterior Surface Area = 0.  0 Infiltration will result.
+   ** Warning ** Calculated design heating load for zone=TZ_AMPHITHEATER is zero.
+   **   ~~~   ** Check Sizing:Zone and ZoneControl:Thermostat inputs.
+   ** Warning ** UpdateZoneSizing: Cooling supply air temperature (calculated) within 5C of zone temperature
+   **   ~~~   ** ...check zone thermostat set point and design supply air temperatures
+   **   ~~~   ** ...zone name = TZ_AMPHITHEATER
+   **   ~~~   ** ...design sensible cooling load = 54484.41 W
+   **   ~~~   ** ...thermostat set point temp    = 0.000 C
+   **   ~~~   ** ...zone temperature             = 4.255E-002 C
+   **   ~~~   ** ...supply air temperature       = -2.000 C
+   **   ~~~   ** ...temperature difference       = -2.04255 C
+   **   ~~~   ** ...calculated volume flow rate  = 22.71346 m3/s
+   **   ~~~   ** ...calculated mass flow rate    = 26.15641 kg/s
+   ************* Beginning System Sizing Calculations
+   ************* Beginning Plant Sizing Calculations
+   ** Warning ** GetOAControllerInputs: Controller:MechanicalVentilation="CONTROLLER MECHANICAL VENTILATION 1"
+   **   ~~~   ** Cannot locate a matching DesignSpecification:ZoneAirDistribution object for Zone="TZ_AMPHITHEATER".
+   **   ~~~   ** Using default zone air distribution effectiveness of 1.0 for heating and cooling.
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ** Warning ** CalcOAController: Minimum OA fraction > Mechanical Ventilation Controller request for Controller:OutdoorAir=CONTROLLER OUTDOOR AIR 1, Min OA fraction is used.
+   **   ~~~   ** This may be overriding desired ventilation controls. Check inputs for Minimum Outdoor Air Flow Rate, Minimum Outdoor Air Schedule Name and Controller:MechanicalVentilation
+   **   ~~~   ** Minimum OA fraction = 1.0000, Mech Vent OA fraction = 0.5082
+   **   ~~~   **  Environment=2020, at Simulation time=02/03 09:00 - 09:15
+   ** Warning ** Missing 'Temperature Setpoint' for node named named 'NODE 3'.
+   **  Fatal  ** checkSetpointNodesAtEnd: At least one node does not have a setpoint attached, neither via a SetpointManager, EMS:Actuator, or API
+   ...Summary of Errors that led to program termination:
+   ..... Reference severe error count=0
+   ..... Last severe error=
+   *************
+   ************* ===== Recurring Error Summary =====
+   ************* The following recurring error messages occurred.
+   *************
+   *************  ** Warning ** Controller:OutdoorAir="CONTROLLER OUTDOOR AIR 1": Min OA fraction > Mechanical ventilation OA fraction, continues...
+   *************  **   ~~~   **   This error occurred 2840 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=1.000000  Min=1.000000
+   *************
+   *************
+   ************* ===== Final Error Summary =====
+   ************* The following error categories occurred.  Consider correcting or noting.
+   ************* Nominally Unused Constructions
+   ************* ..The nominally unused constructions warning is provided to alert you to potential conditions that can cause
+   ************* ..extra time during simulation. Each construction is calculated by the algorithm indicated in the HeatBalanceAlgorithm
+   ************* ..object. You may remove the constructions indicated (when you use the DisplayExtraWarnings option).
+   *************
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 8 Warning; 0 Severe Errors.
+   ************* EnergyPlus Terminated--Fatal Error Detected. 2858 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  0.67sec

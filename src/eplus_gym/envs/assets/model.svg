@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<svg width="250mm" height="200mm" viewBox="0 0 2750 1500"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events">
+<g font-family="Verdana" font-size="8">
+  <line x1="2050" y1="110" x2="1050" y2="30" style="stroke:silver;"/>
+  <rect x="1950" y="20" width="200" height="20" style="fill:chartreuse; stroke: black;"/>1
+  <text x="1952" y="33">TZ_AMPHITHEATER</text>
+  <rect x="200" y="220" width="200" height="20" style="fill:snow; stroke: black;"/>2
+  <text x="202" y="233">OutdoorAir:NodeList</text>
+  <rect x="1200" y="100" width="200" height="20" style="fill:wheat; stroke: black;"/>10
+  <text x="1202" y="113">HOT WATER LOOP SUPPLY OUTLET PIPE</text>
+  <rect x="1450" y="100" width="200" height="20" style="fill:wheat; stroke: black;"/>11
+  <text x="1452" y="113">HOT WATER LOOP DEMAND INLET PIPE</text>
+  <rect x="1950" y="140" width="200" height="20" style="fill:wheat; stroke: black;"/>12
+  <text x="1952" y="153">HOT WATER LOOP DEMAND BYPASS PIPE</text>
+  <rect x="2450" y="140" width="200" height="20" style="fill:wheat; stroke: black;"/>13
+  <text x="2452" y="153">HOT WATER LOOP DEMAND OUTLET PIPE</text>
+  <rect x="1700" y="100" width="200" height="20" style="fill:wheat; stroke: black;"/>14
+  <text x="1702" y="113">HOT WATER LOOP DEMAND SPLITTER</text>
+  <rect x="2200" y="140" width="200" height="20" style="fill:wheat; stroke: black;"/>15
+  <text x="2202" y="153">HOT WATER LOOP DEMAND MIXER</text>
+  <rect x="700" y="100" width="200" height="20" style="fill:aliceblue; stroke: black;"/>16
+  <text x="702" y="113">DISTRICT HEATING</text>
+  <rect x="450" y="100" width="200" height="20" style="fill:wheat; stroke: black;"/>17
+  <text x="452" y="113">HOT WATER LOOP SUPPLY SPLITTER</text>
+  <rect x="950" y="100" width="200" height="20" style="fill:wheat; stroke: black;"/>18
+  <text x="952" y="113">HOT WATER LOOP SUPPLY MIXER</text>
+  <rect x="1450" y="20" width="200" height="20" style="fill:wheat; stroke: black;"/>19
+  <text x="1452" y="33">AIR LOOP HVAC ZONE SPLITTER 1</text>
+  <rect x="1700" y="20" width="200" height="20" style="fill:snow; stroke: black;"/>20
+  <text x="1702" y="33">DIFFUSER</text>
+  <rect x="2200" y="20" width="200" height="20" style="fill:wheat; stroke: black;"/>21
+  <text x="2202" y="33">AIR LOOP HVAC ZONE MIXER 1</text>
+  <rect x="700" y="20" width="200" height="20" style="fill:lawngreen; stroke: black;"/>22
+  <text  x="702" y="28">AIR LOOP HVAC OUTDOOR AIR SYSTEM 1
+  <tspan x="702" y="36">OUTDOOR AIR MIXER</tspan></text>
+  <rect x="1950" y="100" width="200" height="20" style="fill:salmon; stroke: black;"/>23
+  <text x="1952" y="113">CTA AUDITOIRE 240P HC</text>
+  <rect x="950" y="20" width="200" height="20" style="fill:salmon; stroke: black;"/>24
+  <text x="952" y="33">CTA AUDITOIRE 240P HC</text>
+  <rect x="450" y="20" width="200" height="20" style="fill:silver; stroke: black;"/>26
+  <text x="452" y="33">CTA AUDITOIRE 240P EXAUST FAN</text>
+  <rect x="1200" y="20" width="200" height="20" style="fill:silver; stroke: black;"/>27
+  <text x="1202" y="33">CTA AUDITOIRE 240P SUPPLY FAN</text>
+  <rect x="200" y="20" width="200" height="20" style="fill:aliceblue; stroke: black;"/>28
+  <text x="202" y="33">DIRECT EVAP COOLER</text>
+  <rect x="450" y="220" width="200" height="20" style="fill:paleturquoise; stroke: black;"/>30
+  <text x="452" y="233">AIR-TO-AIR PLATE HX</text>
+  <rect x="200" y="100" width="200" height="20" style="fill:springgreen; stroke: black;"/>32
+  <text x="202" y="113">PUMP VARIABLE SPEED 1</text>
+  <line x1="400" y1="230" x2="450" y2="230" style="stroke:black;"/>
+  <line x1="1400" y1="110" x2="1450" y2="110" style="stroke:black;"/>
+  <line x1="1650" y1="110" x2="1700" y2="110" style="stroke:black;"/>
+  <line x1="2150" y1="150" x2="2200" y2="150" style="stroke:black;"/>
+  <line x1="1900" y1="110" x2="1950" y2="110" style="stroke:black;"/>
+  <line x1="1900" y1="110" x2="1950" y2="150" style="stroke:black;"/>
+  <line x1="2400" y1="150" x2="2450" y2="150" style="stroke:black;"/>
+  <line x1="900" y1="110" x2="950" y2="110" style="stroke:black;"/>
+  <line x1="650" y1="110" x2="700" y2="110" style="stroke:black;"/>
+  <line x1="1150" y1="110" x2="1200" y2="110" style="stroke:black;"/>
+  <line x1="1650" y1="30" x2="1700" y2="30" style="stroke:black;"/>
+  <line x1="1900" y1="30" x2="1950" y2="30" style="stroke:black;"/>
+  <line x1="900" y1="30" x2="950" y2="30" style="stroke:black;"/>
+  <line x1="2150" y1="110" x2="2200" y2="150" style="stroke:black;"/>
+  <line x1="1150" y1="30" x2="1200" y2="30" style="stroke:black;"/>
+  <line x1="650" y1="30" x2="700" y2="30" style="stroke:black;"/>
+  <line x1="1400" y1="30" x2="1450" y2="30" style="stroke:black;"/>
+  <line x1="400" y1="30" x2="450" y2="30" style="stroke:black;"/>
+  <line x1="650" y1="230" x2="700" y2="30" style="stroke:black;"/>
+  <line x1="400" y1="110" x2="450" y2="110" style="stroke:black;"/>
+  <line x1="2150" y1="30" x2="2200" y2="30" style="stroke:black;"/>
+  <line x1="200" y1="30" x2="175" y2="30" style="stroke:black;"/>
+  <line x1="175" y1="30" x2="175" y2="0" style="stroke:black;"/>
+  <line x1="175" y1="0" x2="2425" y2="0" style="stroke:black;"/>
+  <line x1="2425" y1="0" x2="2425" y2="30" style="stroke:black;"/>
+  <line x1="2425" y1="30" x2="2400" y2="30" style="stroke:black;"/>
+  <line x1="200" y1="110" x2="175" y2="110" style="stroke:black;"/>
+  <line x1="175" y1="110" x2="175" y2="80" style="stroke:black;"/>
+  <line x1="175" y1="80" x2="2675" y2="80" style="stroke:black;"/>
+  <line x1="2675" y1="80" x2="2675" y2="150" style="stroke:black;"/>
+  <line x1="2675" y1="150" x2="2650" y2="150" style="stroke:black;"/>
+  <text x="200" y="280">Unused Non-Parent Objects:</text>
+  <text x="220" y="300">OutdoorAir:Node</text>
+  <text x="220" y="320">SETPOINT MANAGER SCHEDULED 2</text>
+  <text x="220" y="340">NODE 10 OS DEFAULT SPM</text>
+  <text x="220" y="360">NODE 27 OS DEFAULT SPM</text>
+  <text x="220" y="380">NODE 20 OS DEFAULT SPM</text>
+  <text x="220" y="400">NODE 9 OS DEFAULT SPM</text>
+  <text x="220" y="420">NODE 11 OS DEFAULT SPM</text>
+  <text x="220" y="440">CONTROLLER WATER COIL 1</text>
+  <text x="220" y="460">CONTROLLER OUTDOOR AIR 1</text>
+  <text x="200" y="500">
+The following are not supported: objects related to controls or ZoneHVAC:IdealLoadsAirSystem</text>
+</g>
+</svg>

@@ -1,0 +1,312 @@
+Program Version,EnergyPlus, Version 25.1.0-68a4a7c774, YMD=2025.11.08 11:51
+! This file shows details about the branches, nodes, and other
+! elements of the flow connections.
+! This file is intended for use in "debugging" potential problems
+! that may also be detected by the program, but may be more easily
+! identified by "eye".
+! This file is also intended to support software which draws a
+! schematic diagram of the HVAC system.
+! ===============================================================
+! #Nodes,<Number of Unique Nodes>
+ #Nodes,31
+! <Node>,<NodeNumber>,<Node Name>,<Node Fluid Type>,<# Times Node Referenced After Definition>
+ Node,1,NODE 6,Air,3
+ Node,2,NODE 43,Air,2
+ Node,3,NODE 3,Air,13
+ Node,4,NODE 4,Air,3
+ Node,5,NODE 2,Air,2
+ Node,6,NODE 10,Air,5
+ Node,7,NODE 27,Air,5
+ Node,8,NODE 9,Air,5
+ Node,9,NODE 11,Air,10
+ Node,10,NODE 12,Water,2
+ Node,11,NODE 18,Water,1
+ Node,12,NODE 14,Water,1
+ Node,13,NODE 17,Water,1
+ Node,14,HOT WATER LOOP SUPPLY OUTLET PIPE NODE,Water,1
+ Node,15,NODE 13,Water,4
+ Node,16,NODE 15,Water,2
+ Node,17,HOT WATER LOOP DEMAND INLET PIPE NODE,Water,1
+ Node,18,NODE 23,Water,2
+ Node,19,NODE 24,Water,1
+ Node,20,HOT WATER LOOP DEMAND BYPASS PIPE INLET NODE,Water,1
+ Node,21,HOT WATER LOOP DEMAND BYPASS PIPE OUTLET NODE,Water,1
+ Node,22,HOT WATER LOOP DEMAND OUTLET PIPE NODE,Water,1
+ Node,23,NODE 16,Water,2
+ Node,24,NODE 1,Air,0
+ Node,25,NODE 5,Air,2
+ Node,26,NODE 7,Air,2
+ Node,27,MODEL OUTDOOR AIR NODE,Air,0
+ Node,28,NODE 20,Air,2
+ Node,29,NODE 40,Air,1
+ Node,30,NODE 21,Air,2
+ Node,31,NODE 8,Air,0
+! ===============================================================
+! Suspicious nodes have 0 references.  It is normal for some nodes, however.
+! Listing nodes with 0 references (culled from previous list):
+! <Suspicious Node>,<NodeNumber>,<Node Name>,<Node Fluid Type>,<# Times Node Referenced After Definition>
+ Suspicious Node,24,NODE 1,Air,0
+ Suspicious Node,27,MODEL OUTDOOR AIR NODE,Air,0
+ Suspicious Node,31,NODE 8,Air,0
+! ===============================================================
+! <#Branch Lists>,<Number of Branch Lists>
+ #Branch Lists,3
+! <Branch List>,<Branch List Count>,<Branch List Name>,<Loop Name>,<Loop Type>,<Number of Branches>
+! <Branch>,<Branch Count>,<Branch Name>,<Loop Name>,<Loop Type>,<Branch Inlet Node Name>,<Branch Outlet Node Name>
+ Branch List,1,CTA AUDITOIRE 240P SUPPLY BRANCHES,CTA AUDITOIRE 240P,Air,1
+   Branch,1,CTA AUDITOIRE 240P MAIN BRANCH,CTA AUDITOIRE 240P,Air,NODE 2,NODE 3
+ Branch List,2,HOT WATER LOOP SUPPLY BRANCHES,HOT WATER LOOP,Plant Supply,3
+   Branch,1,HOT WATER LOOP SUPPLY INLET BRANCH,HOT WATER LOOP,Plant Supply,NODE 12,NODE 18
+   Branch,2,HOT WATER LOOP SUPPLY BRANCH 1,HOT WATER LOOP,Plant Supply,NODE 14,NODE 17
+   Branch,3,HOT WATER LOOP SUPPLY OUTLET BRANCH,HOT WATER LOOP,Plant Supply,HOT WATER LOOP SUPPLY OUTLET PIPE NODE,NODE 13
+ Branch List,3,HOT WATER LOOP DEMAND BRANCHES,HOT WATER LOOP,Plant Demand,4
+   Branch,1,HOT WATER LOOP DEMAND INLET BRANCH,HOT WATER LOOP,Plant Demand,NODE 15,HOT WATER LOOP DEMAND INLET PIPE NODE
+   Branch,2,HOT WATER LOOP DEMAND BRANCH 1,HOT WATER LOOP,Plant Demand,NODE 23,NODE 24
+   Branch,3,HOT WATER LOOP DEMAND BYPASS BRANCH,HOT WATER LOOP,Plant Demand,HOT WATER LOOP DEMAND BYPASS PIPE INLET NODE,HOT WATER LOOP DEMAND BYPASS PIPE OUTLET NODE
+   Branch,4,HOT WATER LOOP DEMAND OUTLET BRANCH,HOT WATER LOOP,Plant Demand,HOT WATER LOOP DEMAND OUTLET PIPE NODE,NODE 16
+! ===============================================================
+! <#Supply Air Paths>,<Number of Supply Air Paths>
+ #Supply Air Paths,1
+! <Supply Air Path>,<Supply Air Path Count>,<Supply Air Path Name>,<AirLoopHVAC Name>
+! <#Components on Supply Air Path>,<Number of Components>
+! <Supply Air Path Component>,<Component Count>,<Component Type>,<Component Name>,<AirLoopHVAC Name>
+! <#Outlet Nodes on Supply Air Path Component>,<Number of Nodes>
+! <Supply Air Path Component Nodes>,<Node Count>,<Component Type>,<Component Name>,<Inlet Node Name>,<Outlet Node Name>,<AirLoopHVAC Name>
+ Supply Air Path,1,CTA AUDITOIRE 240P NODE 4 SUPPLY PATH,CTA AUDITOIRE 240P
+   #Components on Supply Air Path,1
+   Supply Air Path Component,1,AIRLOOPHVAC:ZONESPLITTER,AIR LOOP HVAC ZONE SPLITTER 1,CTA AUDITOIRE 240P
+     #Outlet Nodes on Supply Air Path Component,1
+     Supply Air Path Component Nodes,1,AIRLOOPHVAC:ZONESPLITTER,AIR LOOP HVAC ZONE SPLITTER 1,NODE 4,NODE 40,CTA AUDITOIRE 240P
+! <#Nodes on Supply Air Path>,<Number of Nodes>
+! <Supply Air Path Node>,<Node Type>,<Node Count>,<Node Name>,<AirLoopHVAC Name>
+#Nodes on Supply Air Path,2
+   Supply Air Path Node,Inlet Node,1,NODE 4,CTA AUDITOIRE 240P
+   Supply Air Path Node,Outlet Node,2,NODE 40,CTA AUDITOIRE 240P
+! ===============================================================
+! <#Return Air Paths>,<Number of Return Air Paths>
+ #Return Air Paths,1
+! <Return Air Path>,<Return Air Path Count>,<Return Air Path Name>,<AirLoopHVAC Name>
+! <#Components on Return Air Path>,<Number of Components>
+! <Return Air Path Component>,<Component Count>,<Component Type>,<Component Name>,<AirLoopHVAC Name>
+! <#Inlet Nodes on Return Air Path Component>,<Number of Nodes>
+! <Return Air Path Component Nodes>,<Node Count>,<Component Type>,<Component Name>,<Inlet Node Name>,<Outlet Node Name>,<AirLoopHVAC Name>
+ Return Air Path,1,CTA AUDITOIRE 240P RETURN PATH,CTA AUDITOIRE 240P
+   #Components on Return Air Path,1
+   Return Air Path Component,1,AIRLOOPHVAC:ZONEMIXER,AIR LOOP HVAC ZONE MIXER 1,CTA AUDITOIRE 240P
+     #Inlet Nodes on Return Air Path Component,1
+     Return Air Path Component Nodes,1,AIRLOOPHVAC:ZONEMIXER,AIR LOOP HVAC ZONE MIXER 1,NODE 43,NODE 5,CTA AUDITOIRE 240P
+! <#Nodes on Return Air Path>,<Number of Nodes>
+! <Return Air Path Node>,<Node Type>,<Node Count>,<Node Name>,<AirLoopHVAC Name>
+   #Nodes on Return Air Path,2
+   Return Air Path Node,Outlet Node,1,NODE 5,CTA AUDITOIRE 240P
+   Return Air Path Node,Inlet Node,2,NODE 43,CTA AUDITOIRE 240P
+! ===============================================================
+! #Outdoor Air Nodes,<Number of Outdoor Air Nodes>
+ #Outdoor Air Nodes,2
+! <Outdoor Air Node>,<NodeNumber>,<Node Name>
+ Outdoor Air Node,26,NODE 7
+ Outdoor Air Node,27,MODEL OUTDOOR AIR NODE
+! ===============================================================
+! <#Component Sets>,<Number of Component Sets>
+ #Component Sets,15
+! <Component Set>,<Component Set Count>,<Parent Object Type>,<Parent Object Name>,<Component Type>,<Component Name>,<Inlet Node ID>,<Outlet Node ID>,<Description>
+ Component Set,1,BRANCH,CTA AUDITOIRE 240P MAIN BRANCH,EVAPORATIVECOOLER:DIRECT:RESEARCHSPECIAL,DIRECT EVAP COOLER,NODE 2,NODE 10,Evap Air Nodes
+ Component Set,2,BRANCH,CTA AUDITOIRE 240P MAIN BRANCH,FAN:VARIABLEVOLUME,CTA AUDITOIRE 240P EXAUST FAN,NODE 10,NODE 27,Air Nodes
+ Component Set,3,BRANCH,CTA AUDITOIRE 240P MAIN BRANCH,AIRLOOPHVAC:OUTDOORAIRSYSTEM,AIR LOOP HVAC OUTDOOR AIR SYSTEM 1,NODE 27,NODE 9,Air Nodes
+ Component Set,4,BRANCH,CTA AUDITOIRE 240P MAIN BRANCH,COIL:HEATING:WATER,CTA AUDITOIRE 240P HC,NODE 9,NODE 11,Air Nodes
+ Component Set,5,BRANCH,CTA AUDITOIRE 240P MAIN BRANCH,FAN:VARIABLEVOLUME,CTA AUDITOIRE 240P SUPPLY FAN,NODE 11,NODE 3,Air Nodes
+ Component Set,6,BRANCH,HOT WATER LOOP SUPPLY INLET BRANCH,PUMP:VARIABLESPEED,PUMP VARIABLE SPEED 1,NODE 12,NODE 18,Water Nodes
+ Component Set,7,BRANCH,HOT WATER LOOP SUPPLY BRANCH 1,DISTRICTHEATING:WATER,DISTRICT HEATING,NODE 14,NODE 17,Hot Water Nodes
+ Component Set,8,BRANCH,HOT WATER LOOP SUPPLY OUTLET BRANCH,PIPE:ADIABATIC,HOT WATER LOOP SUPPLY OUTLET PIPE,HOT WATER LOOP SUPPLY OUTLET PIPE NODE,NODE 13,Pipe Nodes
+ Component Set,9,BRANCH,HOT WATER LOOP DEMAND INLET BRANCH,PIPE:ADIABATIC,HOT WATER LOOP DEMAND INLET PIPE,NODE 15,HOT WATER LOOP DEMAND INLET PIPE NODE,Pipe Nodes
+ Component Set,10,BRANCH,HOT WATER LOOP DEMAND BRANCH 1,COIL:HEATING:WATER,CTA AUDITOIRE 240P HC,NODE 23,NODE 24,Water Nodes
+ Component Set,11,BRANCH,HOT WATER LOOP DEMAND BYPASS BRANCH,PIPE:ADIABATIC,HOT WATER LOOP DEMAND BYPASS PIPE,HOT WATER LOOP DEMAND BYPASS PIPE INLET NODE,HOT WATER LOOP DEMAND BYPASS PIPE OUTLET NODE,Pipe Nodes
+ Component Set,12,BRANCH,HOT WATER LOOP DEMAND OUTLET BRANCH,PIPE:ADIABATIC,HOT WATER LOOP DEMAND OUTLET PIPE,HOT WATER LOOP DEMAND OUTLET PIPE NODE,NODE 16,Pipe Nodes
+ Component Set,13,ZONEHVAC:AIRDISTRIBUTIONUNIT,ADU DIFFUSER,AIRTERMINAL:SINGLEDUCT:CONSTANTVOLUME:NOREHEAT,DIFFUSER,NODE 40,NODE 6,Air Nodes
+ Component Set,14,AIRLOOPHVAC:OUTDOORAIRSYSTEM,AIR LOOP HVAC OUTDOOR AIR SYSTEM 1,HEATEXCHANGER:AIRTOAIR:SENSIBLEANDLATENT,AIR-TO-AIR PLATE HX,NODE 7,NODE 20,Process Air Nodes
+ Component Set,15,AIRLOOPHVAC:OUTDOORAIRSYSTEM,AIR LOOP HVAC OUTDOOR AIR SYSTEM 1,OUTDOORAIR:MIXER,AIR LOOP HVAC OUTDOOR AIR SYSTEM 1 OUTDOOR AIR MIXER,NODE 20,NODE 9,Air Nodes
+! ===============================================================
+! <# Plant Loops>,<Number of Plant Loops>
+ #Plant Loops,1
+! <Plant Loop>,<Plant Loop Name>,<Loop Type>,<Inlet Node Name>,<Outlet Node Name>,<Branch List>,<Connector List>
+! <Plant Loop Connector>,<Connector Type>,<Connector Name>,<Loop Name>,<Loop Type>,<Number of Inlets/Outlets>
+! <Plant Loop Connector Branches>,<Connector Node Count>,<Connector Type>,<Connector Name>,<Inlet Branch>,<Outlet Branch>,<Loop Name>,<Loop Type>
+! <Plant Loop Connector Nodes>,<Connector Node Count>,<Connector Type>,<Connector Name>,<Inlet Node>,<Outlet Node>,<Loop Name>,<Loop Type>
+! <Plant Loop Supply Connection>,<Plant Loop Name>,<Supply Side Outlet Node Name>,<Demand Side Inlet Node Name>
+! <Plant Loop Return Connection>,<Plant Loop Name>,<Demand Side Outlet Node Name>,<Supply Side Inlet Node Name>
+ Plant Loop,HOT WATER LOOP,Demand,NODE 15,NODE 16,HOT WATER LOOP DEMAND BRANCHES,HOT WATER LOOP DEMAND CONNECTOR LIST
+   Plant Loop Connector,Splitter,HOT WATER LOOP DEMAND SPLITTER,HOT WATER LOOP,Demand,2
+     Plant Loop Connector Branches,1,Splitter,HOT WATER LOOP DEMAND SPLITTER,HOT WATER LOOP DEMAND INLET BRANCH,HOT WATER LOOP DEMAND BRANCH 1,HOT WATER LOOP,Demand
+     Plant Loop Connector Nodes,   1,Splitter,HOT WATER LOOP DEMAND SPLITTER,HOT WATER LOOP DEMAND INLET PIPE NODE,NODE 23,HOT WATER LOOP,Demand
+     Plant Loop Connector Branches,2,Splitter,HOT WATER LOOP DEMAND SPLITTER,HOT WATER LOOP DEMAND INLET BRANCH,HOT WATER LOOP DEMAND BYPASS BRANCH,HOT WATER LOOP,Demand
+     Plant Loop Connector Nodes,   2,Splitter,HOT WATER LOOP DEMAND SPLITTER,HOT WATER LOOP DEMAND INLET PIPE NODE,HOT WATER LOOP DEMAND BYPASS PIPE INLET NODE,HOT WATER LOOP,Demand
+   Plant Loop Connector,Mixer,HOT WATER LOOP DEMAND MIXER,HOT WATER LOOP,Demand,2
+     Plant Loop Connector Branches,1,Mixer,HOT WATER LOOP DEMAND MIXER,HOT WATER LOOP DEMAND BRANCH 1,HOT WATER LOOP DEMAND OUTLET BRANCH,HOT WATER LOOP,Demand
+     Plant Loop Connector Nodes,   1,Mixer,HOT WATER LOOP DEMAND MIXER,NODE 24,HOT WATER LOOP DEMAND OUTLET PIPE NODE,HOT WATER LOOP,Demand
+     Plant Loop Connector Branches,2,Mixer,HOT WATER LOOP DEMAND MIXER,HOT WATER LOOP DEMAND BYPASS BRANCH,HOT WATER LOOP DEMAND OUTLET BRANCH,HOT WATER LOOP,Demand
+     Plant Loop Connector Nodes,   2,Mixer,HOT WATER LOOP DEMAND MIXER,HOT WATER LOOP DEMAND BYPASS PIPE OUTLET NODE,HOT WATER LOOP DEMAND OUTLET PIPE NODE,HOT WATER LOOP,Demand
+ Plant Loop,HOT WATER LOOP,Supply,NODE 12,NODE 13,HOT WATER LOOP SUPPLY BRANCHES,HOT WATER LOOP SUPPLY CONNECTOR LIST
+   Plant Loop Connector,Splitter,HOT WATER LOOP SUPPLY SPLITTER,HOT WATER LOOP,Supply,1
+     Plant Loop Connector Branches,1,Splitter,HOT WATER LOOP SUPPLY SPLITTER,HOT WATER LOOP SUPPLY INLET BRANCH,HOT WATER LOOP SUPPLY BRANCH 1,HOT WATER LOOP,Supply
+     Plant Loop Connector Nodes,   1,Splitter,HOT WATER LOOP SUPPLY SPLITTER,NODE 18,NODE 14,HOT WATER LOOP,Supply
+   Plant Loop Connector,Mixer,HOT WATER LOOP SUPPLY MIXER,HOT WATER LOOP,Supply,1
+     Plant Loop Connector Branches,1,Mixer,HOT WATER LOOP SUPPLY MIXER,HOT WATER LOOP SUPPLY BRANCH 1,HOT WATER LOOP SUPPLY OUTLET BRANCH,HOT WATER LOOP,Supply
+     Plant Loop Connector Nodes,   1,Mixer,HOT WATER LOOP SUPPLY MIXER,NODE 17,HOT WATER LOOP SUPPLY OUTLET PIPE NODE,HOT WATER LOOP,Supply
+ Plant Loop Supply Connection,HOT WATER LOOP,NODE 13,NODE 15
+ Plant Loop Return Connection,HOT WATER LOOP,NODE 16,NODE 12
+! ===============================================================
+! <# Condenser Loops>,<Number of Condenser Loops>
+ #Condenser Loops,0
+! <Condenser Loop>,<Condenser Loop Name>,<Loop Type>,<Inlet Node Name>,<Outlet Node Name>,<Branch List>,<Connector List>
+! <Condenser Loop Connector>,<Connector Type>,<Connector Name>,<Loop Name>,<Loop Type>,<Number of Inlets/Outlets>
+! <Condenser Loop Connector Branches>,<Connector Node Count>,<Connector Type>,<Connector Name>,<Inlet Branch>,<Outlet Branch>,<Loop Name>,<Loop Type>
+! <Condenser Loop Connector Nodes>,<Connector Node Count>,<Connector Type>,<Connector Name>,<Inlet Node>,<Outlet Node>,<Loop Name>,<Loop Type>
+! <Condenser Loop Supply Connection>,<Condenser Loop Name>,<Supply Side Outlet Node Name>,<Demand Side Inlet Node Name>
+! <Condenser Loop Return Connection>,<Condenser Loop Name>,<Demand Side Outlet Node Name>,<Supply Side Inlet Node Name>
+! ===============================================================
+! <# Controlled Zones>,<Number of Controlled Zones>
+ #Controlled Zones,1
+! <Controlled Zone>,<Controlled Zone Name>,<Equip List Name>,<Control List Name>,<Zone Node Name>,<# Inlet Nodes>,<# Exhaust Nodes>,<# Return Nodes>
+! <Controlled Zone Inlet>,<Inlet Node Count>,<Controlled Zone Name>,<Supply Air Inlet Node Name>,<SD Sys:Cooling/Heating [DD:Cooling] Inlet Node Name>,<DD Sys:Heating Inlet Node Name>
+! <Controlled Zone Exhaust>,<Exhaust Node Count>,<Controlled Zone Name>,<Exhaust Air Node Name>
+ Controlled Zone,TZ_AMPHITHEATER,TZ_AMPHITHEATER EQUIPMENT LIST,,NODE 1,1,0,1
+   Controlled Zone Inlet,1,TZ_AMPHITHEATER,NODE 6,NODE 40,N/A
+   Controlled Zone Return,1,TZ_AMPHITHEATER,NODE 43
+! ===============================================================
+! <#Zone Equipment Lists>,<Number of Zone Equipment Lists>
+ #Zone Equipment Lists,1
+! <Zone Equipment List>,<Zone Equipment List Count>,<Zone Equipment List Name>,<Zone Name>,<Number of Components>
+! <Zone Equipment Component>,<Component Count>,<Component Type>,<Component Name>,<Zone Name>,<Heating Priority>,<Cooling Priority>
+ Zone Equipment List,1,TZ_AMPHITHEATER EQUIPMENT LIST,TZ_AMPHITHEATER,1
+   Zone Equipment Component,1,ZONEHVAC:AIRDISTRIBUTIONUNIT,ADU DIFFUSER,TZ_AMPHITHEATER,1,1
+! ===============================================================
+! <#AirLoopHVACs>,<Number of AirLoopHVACs>
+ #AirLoopHVACs,1
+! <AirLoopHVAC>,<Air Loop Name>,<# Return Nodes>,<# Supply Nodes>,<# Zones Cooled>,<# Zones Heated>,<Outdoor Air Used>
+! <AirLoop Return Connections>,<Connection Count>,<AirLoopHVAC Name>,<Zn Eqp Return Node #>,<Zn Eqp Return Node Name>,<AirLoop Return Node #>,<Air Loop Return Node Name>
+! <AirLoop Supply Connections>,<Connection Count>,<AirLoopHVAC Name>,<Zn Eqp Supply Node #>,<Zn Eqp Supply Node Name>,<AirLoop Supply Node #>,<Air Loop Supply Node Name>
+! <Cooled Zone Info>,<Cooled Zone Count>,<Cooled Zone Name>,<Cooled Zone Inlet Node #>,<Cooled Zone Inlet Node Name>,<AirLoopHVAC Name>
+! <Heated Zone Info>,<Heated Zone Count>,<Heated Zone Name>,<Heated Zone Inlet Node #>,<Heated Zone Inlet Node Name>,<AirLoopHVAC Name>
+! <Outdoor Air Connections>,<OA Inlet Node #>,<OA Return Air Inlet Node Name>,<OA Outlet Node #>,<OA Mixed Air Outlet Node Name>,<AirLoopHVAC Name>
+! <AirLoopHVAC Connector>,<Connector Type>,<Connector Name>,<Loop Name>,<Loop Type>,<Number of Inlets/Outlets>
+! <AirLoopHVAC Connector Branches>,<Connector Node Count>,<Connector Type>,<Connector Name>,<Inlet Branch>,<Outlet Branch>,<Loop Name>,<Loop Type>
+! <AirLoopHVAC Connector Nodes>,<Connector Node Count>,<Connector Type>,<Connector Name>,<Inlet Node>,<Outlet Node>,<Loop Name>,<Loop Type>
+ AirLoopHVAC,CTA AUDITOIRE 240P,1,1,1,0,Yes
+   AirLoop Return Connections,1,CTA AUDITOIRE 240P,25,NODE 5,5,NODE 2
+   AirLoop Supply Connections,1,CTA AUDITOIRE 240P,4,NODE 4,3,NODE 3
+   Cooled Zone Info,1,TZ_AMPHITHEATER,1,NODE 6,CTA AUDITOIRE 240P
+   Outdoor Air Connections,7,NODE 27,8,NODE 9,CTA AUDITOIRE 240P
+! ===============================================================
+! <#Parent Node Connections>,<Number of Parent Node Connections>
+ #Parent Node Connections,32
+! <Parent Node Connection>,<Node Name>,<Node ObjectType>,<Node ObjectName>,<Node ConnectionType>,<Node FluidStream>
+ Parent Node Connection,NODE 2,BRANCH,CTA AUDITOIRE 240P MAIN BRANCH,Inlet,1
+ Parent Node Connection,NODE 10,BRANCH,CTA AUDITOIRE 240P MAIN BRANCH,Internal,1
+ Parent Node Connection,NODE 27,BRANCH,CTA AUDITOIRE 240P MAIN BRANCH,Internal,1
+ Parent Node Connection,NODE 9,BRANCH,CTA AUDITOIRE 240P MAIN BRANCH,Internal,1
+ Parent Node Connection,NODE 11,BRANCH,CTA AUDITOIRE 240P MAIN BRANCH,Internal,1
+ Parent Node Connection,NODE 3,BRANCH,CTA AUDITOIRE 240P MAIN BRANCH,Outlet,1
+ Parent Node Connection,NODE 12,BRANCH,HOT WATER LOOP SUPPLY INLET BRANCH,Inlet,1
+ Parent Node Connection,NODE 18,BRANCH,HOT WATER LOOP SUPPLY INLET BRANCH,Outlet,1
+ Parent Node Connection,NODE 14,BRANCH,HOT WATER LOOP SUPPLY BRANCH 1,Inlet,1
+ Parent Node Connection,NODE 17,BRANCH,HOT WATER LOOP SUPPLY BRANCH 1,Outlet,1
+ Parent Node Connection,HOT WATER LOOP SUPPLY OUTLET PIPE NODE,BRANCH,HOT WATER LOOP SUPPLY OUTLET BRANCH,Inlet,1
+ Parent Node Connection,NODE 13,BRANCH,HOT WATER LOOP SUPPLY OUTLET BRANCH,Outlet,1
+ Parent Node Connection,NODE 15,BRANCH,HOT WATER LOOP DEMAND INLET BRANCH,Inlet,1
+ Parent Node Connection,HOT WATER LOOP DEMAND INLET PIPE NODE,BRANCH,HOT WATER LOOP DEMAND INLET BRANCH,Outlet,1
+ Parent Node Connection,NODE 23,BRANCH,HOT WATER LOOP DEMAND BRANCH 1,Inlet,1
+ Parent Node Connection,NODE 24,BRANCH,HOT WATER LOOP DEMAND BRANCH 1,Outlet,1
+ Parent Node Connection,HOT WATER LOOP DEMAND BYPASS PIPE INLET NODE,BRANCH,HOT WATER LOOP DEMAND BYPASS BRANCH,Inlet,1
+ Parent Node Connection,HOT WATER LOOP DEMAND BYPASS PIPE OUTLET NODE,BRANCH,HOT WATER LOOP DEMAND BYPASS BRANCH,Outlet,1
+ Parent Node Connection,HOT WATER LOOP DEMAND OUTLET PIPE NODE,BRANCH,HOT WATER LOOP DEMAND OUTLET BRANCH,Inlet,1
+ Parent Node Connection,NODE 16,BRANCH,HOT WATER LOOP DEMAND OUTLET BRANCH,Outlet,1
+ Parent Node Connection,NODE 4,AIRLOOPHVAC:SUPPLYPATH,CTA AUDITOIRE 240P NODE 4 SUPPLY PATH,Inlet,1
+ Parent Node Connection,NODE 5,AIRLOOPHVAC:RETURNPATH,CTA AUDITOIRE 240P RETURN PATH,Outlet,1
+ Parent Node Connection,NODE 12,PLANTLOOP,HOT WATER LOOP,Inlet,1
+ Parent Node Connection,NODE 13,PLANTLOOP,HOT WATER LOOP,Outlet,1
+ Parent Node Connection,NODE 15,PLANTLOOP,HOT WATER LOOP,Inlet,1
+ Parent Node Connection,NODE 16,PLANTLOOP,HOT WATER LOOP,Outlet,1
+ Parent Node Connection,NODE 13,PLANTLOOP,HOT WATER LOOP,Sensor,1
+ Parent Node Connection,NODE 6,ZONEHVAC:AIRDISTRIBUTIONUNIT,ADU DIFFUSER,Outlet,1
+ Parent Node Connection,NODE 2,AIRLOOPHVAC,CTA AUDITOIRE 240P,Inlet,1
+ Parent Node Connection,NODE 5,AIRLOOPHVAC,CTA AUDITOIRE 240P,Outlet,1
+ Parent Node Connection,NODE 4,AIRLOOPHVAC,CTA AUDITOIRE 240P,Inlet,1
+ Parent Node Connection,NODE 3,AIRLOOPHVAC,CTA AUDITOIRE 240P,Outlet,1
+! ===============================================================
+! <#Non-Parent Node Connections>,<Number of Non-Parent Node Connections>
+ #Non-Parent Node Connections,74
+! <Non-Parent Node Connection>,<Node Name>,<Node ObjectType>,<Node ObjectName>,<Node ConnectionType>,<Node FluidStream>
+ Non-Parent Node Connection,NODE 1,ZONEHVAC:EQUIPMENTCONNECTIONS,TZ_AMPHITHEATER,ZoneNode,1
+ Non-Parent Node Connection,NODE 6,ZONEHVAC:EQUIPMENTCONNECTIONS,TZ_AMPHITHEATER,ZoneInlet,1
+ Non-Parent Node Connection,NODE 43,ZONEHVAC:EQUIPMENTCONNECTIONS,TZ_AMPHITHEATER,ZoneReturn,1
+ Non-Parent Node Connection,NODE 7,OUTDOORAIR:NODELIST,OutdoorAir:NodeList,OutdoorAir,1
+ Non-Parent Node Connection,MODEL OUTDOOR AIR NODE,OUTDOORAIR:NODE,OutdoorAir:Node,OutdoorAir,2
+ Non-Parent Node Connection,NODE 13,SETPOINTMANAGER:SCHEDULED,SETPOINT MANAGER SCHEDULED 2,Setpoint,1
+ Non-Parent Node Connection,NODE 3,SETPOINTMANAGER:MIXEDAIR,NODE 10 OS DEFAULT SPM,Sensor,1
+ Non-Parent Node Connection,NODE 11,SETPOINTMANAGER:MIXEDAIR,NODE 10 OS DEFAULT SPM,Sensor,1
+ Non-Parent Node Connection,NODE 10,SETPOINTMANAGER:MIXEDAIR,NODE 10 OS DEFAULT SPM,Setpoint,1
+ Non-Parent Node Connection,NODE 3,SETPOINTMANAGER:MIXEDAIR,NODE 27 OS DEFAULT SPM,Sensor,1
+ Non-Parent Node Connection,NODE 11,SETPOINTMANAGER:MIXEDAIR,NODE 27 OS DEFAULT SPM,Sensor,1
+ Non-Parent Node Connection,NODE 27,SETPOINTMANAGER:MIXEDAIR,NODE 27 OS DEFAULT SPM,Setpoint,1
+ Non-Parent Node Connection,NODE 3,SETPOINTMANAGER:MIXEDAIR,NODE 20 OS DEFAULT SPM,Sensor,1
+ Non-Parent Node Connection,NODE 11,SETPOINTMANAGER:MIXEDAIR,NODE 20 OS DEFAULT SPM,Sensor,1
+ Non-Parent Node Connection,NODE 20,SETPOINTMANAGER:MIXEDAIR,NODE 20 OS DEFAULT SPM,Setpoint,1
+ Non-Parent Node Connection,NODE 3,SETPOINTMANAGER:MIXEDAIR,NODE 9 OS DEFAULT SPM,Sensor,1
+ Non-Parent Node Connection,NODE 11,SETPOINTMANAGER:MIXEDAIR,NODE 9 OS DEFAULT SPM,Sensor,1
+ Non-Parent Node Connection,NODE 9,SETPOINTMANAGER:MIXEDAIR,NODE 9 OS DEFAULT SPM,Setpoint,1
+ Non-Parent Node Connection,NODE 3,SETPOINTMANAGER:MIXEDAIR,NODE 11 OS DEFAULT SPM,Sensor,1
+ Non-Parent Node Connection,NODE 11,SETPOINTMANAGER:MIXEDAIR,NODE 11 OS DEFAULT SPM,Sensor,1
+ Non-Parent Node Connection,NODE 11,SETPOINTMANAGER:MIXEDAIR,NODE 11 OS DEFAULT SPM,Setpoint,1
+ Non-Parent Node Connection,HOT WATER LOOP SUPPLY OUTLET PIPE NODE,PIPE:ADIABATIC,HOT WATER LOOP SUPPLY OUTLET PIPE,Inlet,1
+ Non-Parent Node Connection,NODE 13,PIPE:ADIABATIC,HOT WATER LOOP SUPPLY OUTLET PIPE,Outlet,1
+ Non-Parent Node Connection,NODE 15,PIPE:ADIABATIC,HOT WATER LOOP DEMAND INLET PIPE,Inlet,1
+ Non-Parent Node Connection,HOT WATER LOOP DEMAND INLET PIPE NODE,PIPE:ADIABATIC,HOT WATER LOOP DEMAND INLET PIPE,Outlet,1
+ Non-Parent Node Connection,HOT WATER LOOP DEMAND BYPASS PIPE INLET NODE,PIPE:ADIABATIC,HOT WATER LOOP DEMAND BYPASS PIPE,Inlet,1
+ Non-Parent Node Connection,HOT WATER LOOP DEMAND BYPASS PIPE OUTLET NODE,PIPE:ADIABATIC,HOT WATER LOOP DEMAND BYPASS PIPE,Outlet,1
+ Non-Parent Node Connection,HOT WATER LOOP DEMAND OUTLET PIPE NODE,PIPE:ADIABATIC,HOT WATER LOOP DEMAND OUTLET PIPE,Inlet,1
+ Non-Parent Node Connection,NODE 16,PIPE:ADIABATIC,HOT WATER LOOP DEMAND OUTLET PIPE,Outlet,1
+ Non-Parent Node Connection,HOT WATER LOOP DEMAND INLET PIPE NODE,CONNECTOR:SPLITTER,HOT WATER LOOP DEMAND SPLITTER,Inlet,1
+ Non-Parent Node Connection,NODE 23,CONNECTOR:SPLITTER,HOT WATER LOOP DEMAND SPLITTER,Outlet,1
+ Non-Parent Node Connection,HOT WATER LOOP DEMAND BYPASS PIPE INLET NODE,CONNECTOR:SPLITTER,HOT WATER LOOP DEMAND SPLITTER,Outlet,1
+ Non-Parent Node Connection,HOT WATER LOOP DEMAND OUTLET PIPE NODE,CONNECTOR:MIXER,HOT WATER LOOP DEMAND MIXER,Outlet,1
+ Non-Parent Node Connection,NODE 24,CONNECTOR:MIXER,HOT WATER LOOP DEMAND MIXER,Inlet,1
+ Non-Parent Node Connection,HOT WATER LOOP DEMAND BYPASS PIPE OUTLET NODE,CONNECTOR:MIXER,HOT WATER LOOP DEMAND MIXER,Inlet,1
+ Non-Parent Node Connection,NODE 14,DISTRICTHEATING:WATER,DISTRICT HEATING,Inlet,1
+ Non-Parent Node Connection,NODE 17,DISTRICTHEATING:WATER,DISTRICT HEATING,Outlet,1
+ Non-Parent Node Connection,NODE 18,CONNECTOR:SPLITTER,HOT WATER LOOP SUPPLY SPLITTER,Inlet,1
+ Non-Parent Node Connection,NODE 14,CONNECTOR:SPLITTER,HOT WATER LOOP SUPPLY SPLITTER,Outlet,1
+ Non-Parent Node Connection,HOT WATER LOOP SUPPLY OUTLET PIPE NODE,CONNECTOR:MIXER,HOT WATER LOOP SUPPLY MIXER,Outlet,1
+ Non-Parent Node Connection,NODE 17,CONNECTOR:MIXER,HOT WATER LOOP SUPPLY MIXER,Inlet,1
+ Non-Parent Node Connection,NODE 4,AIRLOOPHVAC:ZONESPLITTER,AIR LOOP HVAC ZONE SPLITTER 1,Inlet,1
+ Non-Parent Node Connection,NODE 40,AIRLOOPHVAC:ZONESPLITTER,AIR LOOP HVAC ZONE SPLITTER 1,Outlet,1
+ Non-Parent Node Connection,NODE 40,AIRTERMINAL:SINGLEDUCT:CONSTANTVOLUME:NOREHEAT,DIFFUSER,Inlet,1
+ Non-Parent Node Connection,NODE 6,AIRTERMINAL:SINGLEDUCT:CONSTANTVOLUME:NOREHEAT,DIFFUSER,Outlet,1
+ Non-Parent Node Connection,NODE 5,AIRLOOPHVAC:ZONEMIXER,AIR LOOP HVAC ZONE MIXER 1,Outlet,1
+ Non-Parent Node Connection,NODE 43,AIRLOOPHVAC:ZONEMIXER,AIR LOOP HVAC ZONE MIXER 1,Inlet,1
+ Non-Parent Node Connection,NODE 9,OUTDOORAIR:MIXER,AIR LOOP HVAC OUTDOOR AIR SYSTEM 1 OUTDOOR AIR MIXER,Outlet,1
+ Non-Parent Node Connection,NODE 20,OUTDOORAIR:MIXER,AIR LOOP HVAC OUTDOOR AIR SYSTEM 1 OUTDOOR AIR MIXER,Inlet,1
+ Non-Parent Node Connection,NODE 21,OUTDOORAIR:MIXER,AIR LOOP HVAC OUTDOOR AIR SYSTEM 1 OUTDOOR AIR MIXER,ReliefAir,1
+ Non-Parent Node Connection,NODE 27,OUTDOORAIR:MIXER,AIR LOOP HVAC OUTDOOR AIR SYSTEM 1 OUTDOOR AIR MIXER,Inlet,1
+ Non-Parent Node Connection,NODE 23,COIL:HEATING:WATER,CTA AUDITOIRE 240P HC,Inlet,2
+ Non-Parent Node Connection,NODE 24,COIL:HEATING:WATER,CTA AUDITOIRE 240P HC,Outlet,2
+ Non-Parent Node Connection,NODE 9,COIL:HEATING:WATER,CTA AUDITOIRE 240P HC,Inlet,1
+ Non-Parent Node Connection,NODE 11,COIL:HEATING:WATER,CTA AUDITOIRE 240P HC,Outlet,1
+ Non-Parent Node Connection,NODE 11,CONTROLLER:WATERCOIL,CONTROLLER WATER COIL 1,Sensor,1
+ Non-Parent Node Connection,NODE 23,CONTROLLER:WATERCOIL,CONTROLLER WATER COIL 1,Actuator,1
+ Non-Parent Node Connection,NODE 10,FAN:VARIABLEVOLUME,CTA AUDITOIRE 240P EXAUST FAN,Inlet,1
+ Non-Parent Node Connection,NODE 27,FAN:VARIABLEVOLUME,CTA AUDITOIRE 240P EXAUST FAN,Outlet,1
+ Non-Parent Node Connection,NODE 11,FAN:VARIABLEVOLUME,CTA AUDITOIRE 240P SUPPLY FAN,Inlet,1
+ Non-Parent Node Connection,NODE 3,FAN:VARIABLEVOLUME,CTA AUDITOIRE 240P SUPPLY FAN,Outlet,1
+ Non-Parent Node Connection,NODE 2,EVAPORATIVECOOLER:DIRECT:RESEARCHSPECIAL,DIRECT EVAP COOLER,Inlet,1
+ Non-Parent Node Connection,NODE 10,EVAPORATIVECOOLER:DIRECT:RESEARCHSPECIAL,DIRECT EVAP COOLER,Outlet,1
+ Non-Parent Node Connection,NODE 10,EVAPORATIVECOOLER:DIRECT:RESEARCHSPECIAL,DIRECT EVAP COOLER,Sensor,1
+ Non-Parent Node Connection,NODE 9,CONTROLLER:OUTDOORAIR,CONTROLLER OUTDOOR AIR 1,Sensor,1
+ Non-Parent Node Connection,NODE 7,CONTROLLER:OUTDOORAIR,CONTROLLER OUTDOOR AIR 1,Actuator,1
+ Non-Parent Node Connection,NODE 21,CONTROLLER:OUTDOORAIR,CONTROLLER OUTDOOR AIR 1,Actuator,1
+ Non-Parent Node Connection,NODE 27,CONTROLLER:OUTDOORAIR,CONTROLLER OUTDOOR AIR 1,Sensor,1
+ Non-Parent Node Connection,NODE 7,HEATEXCHANGER:AIRTOAIR:SENSIBLEANDLATENT,AIR-TO-AIR PLATE HX,Inlet,1
+ Non-Parent Node Connection,NODE 20,HEATEXCHANGER:AIRTOAIR:SENSIBLEANDLATENT,AIR-TO-AIR PLATE HX,Outlet,1
+ Non-Parent Node Connection,NODE 21,HEATEXCHANGER:AIRTOAIR:SENSIBLEANDLATENT,AIR-TO-AIR PLATE HX,Inlet,2
+ Non-Parent Node Connection,NODE 8,HEATEXCHANGER:AIRTOAIR:SENSIBLEANDLATENT,AIR-TO-AIR PLATE HX,Outlet,2
+ Non-Parent Node Connection,NODE 12,PUMP:VARIABLESPEED,PUMP VARIABLE SPEED 1,Inlet,1
+ Non-Parent Node Connection,NODE 18,PUMP:VARIABLESPEED,PUMP VARIABLE SPEED 1,Outlet,1

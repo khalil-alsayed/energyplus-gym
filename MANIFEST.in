@@ -1,0 +1,2 @@
+recursive-include src/eplus_gym/envs/assets *.idf *.epw *.csv
+include README.md LICENSE

@@ -9,7 +9,6 @@ Created on Tue Feb 18 15:55:34 2025
 
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
 from positional_encoding import PositionalEncoding          # as in your current code
 
 class TransformerModel(nn.Module):

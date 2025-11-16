@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import Dict, List, Tuple, Union
+from typing import Dict, Tuple
 
 from importlib.resources import files, as_file
 
@@ -12,18 +12,6 @@ import numpy as np
 from eplus_gym.envs.energyplus import EnergyPlusEnv
 from eplus_gym.envs.utils import override
 
-'''
-def _asset_to_disk(filename: str) -> str:
-    src = files(assets_pkg) / filename
-    cache_dir = Path(tempfile.gettempdir()) / "eplus_gym_assets"
-    cache_dir.mkdir(parents=True, exist_ok=True)
-    dst = cache_dir / filename
-    if not dst.exists():
-        dst.parent.mkdir(parents=True, exist_ok=True)
-        with as_file(src) as real_src:
-            shutil.copy(real_src, dst)
-    return str(dst)
-'''
 
 def _asset_to_disk(filename: str) -> str:
     """

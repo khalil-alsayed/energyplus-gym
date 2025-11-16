@@ -40,6 +40,8 @@ Follow these steps to test `energyplus-gym` on a fresh setup.
 
 &nbsp;   # pip install .
 
+&nbsp;   # pip install .[examples]
+
 
 
 4\. Verify the installation

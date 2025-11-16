@@ -9,68 +9,24 @@ Created on Mon Aug 12 01:06:21 2024
 
 #%% library part
 
-import shutil
-from pathlib import Path
-from importlib.resources import files, as_file
-# import the assets package that contains model.idf
-from eplus_gym.envs import assets as assets_pkg
-# 1) Resolve packaged model.idf to a real temporary path
-
-from pathlib import Path
-
-
-from eplus_gym.envs.env import AmphitheaterEnv
-from eplus_gym.envs.energyplus import RunnerConfig
-from eplus_gym.envs.energyplus import _resolve_output_dir  # uses project-root logic
-from eplus_gym.envs.energyplus import _find_project_root
-
-import random
-from unittest.mock import patch
-from pathlib import Path
-import unittest
-from gym.wrappers.record_video import RecordVideo
-import numpy as np
-import gym
-import matplotlib.pyplot as plt
-import pandas as pd
+# Standard library
 import os
-from sklearn.preprocessing import MinMaxScaler
-from deep_q_network import DeepQNetwork
 import pickle
-
-import torch.optim as optim
-import torch as T
-import warnings
-from datetime import timedelta
-# Suppress the VisibleDeprecationWarning
-warnings.filterwarnings("ignore", category=np.VisibleDeprecationWarning)
-
-os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
-np.set_printoptions(precision=2, suppress=True)
-
-
-from eplus_gym.envs.env import AmphitheaterEnv
-from eplus_gym.envs.energyplus import RunnerConfig
-
-import random
-from unittest.mock import patch
-from pathlib import Path
-import unittest
-from gym.wrappers.record_video import RecordVideo
-import numpy as np
-import gym
-import matplotlib.pyplot as plt
-import pandas as pd
-import os
-from sklearn.preprocessing import MinMaxScaler
-from deep_q_network import DeepQNetwork
-import torch.optim as optim
-import torch as T
-from dqn_agent import DQNAgent
 from collections import deque
-from positional_encoding import PositionalEncoding
-os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
-np.set_printoptions(precision=2, suppress=True)
+from pathlib import Path
+
+# Third-party
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Local project modules
+from eplus_gym.envs.env import AmphitheaterEnv
+from eplus_gym.envs.energyplus import (
+    _resolve_output_dir,
+    _find_project_root,
+)
+from dqn_agent import DQNAgent
 
 # -----------------------------------------------------------------------------
 # Helper utilities                                                            |
@@ -114,7 +70,7 @@ if __name__ == '__main__':
     best_score = -np.inf
     load_checkpoint = False
     total_deployment_load_checkpoint = False
-    n_episodes = 30
+    n_episodes = 3
     
 
 
@@ -344,9 +300,6 @@ plt.rcParams["ytick.labelsize"] = 20   # bigger numbers on y-axes
 # -------------------------------------------------------------
 #  LOAD & PREP DATA
 # -------------------------------------------------------------
-import pandas as pd
-import numpy as np
-from scipy.signal import savgol_filter
 
 data = pd.read_csv(CSV_PATH)
 # Fix datetime column

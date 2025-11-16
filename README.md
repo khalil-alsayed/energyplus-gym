@@ -69,38 +69,27 @@ Replace `your\_example\_script.py` with the example you want to run (e.g. a Q-Tr
 
 
 Using Spyder (optional)
-
 -----------------------
 
+If you want to use this project in Spyder with the `eplus_test` environment:
 
+1. Install Spyder support in the environment:
 
-If you use Spyder and want it to run inside the `eplus\_test` environment:
+   ```bash
+   conda activate eplus_test
+   conda install spyder-kernels
+   ```
 
+2. Start Spyder from the same environment:
 
+   ```bash
+   spyder
+   ```
 
-1\. Install `spyder-kernels` in the environment:
+3. In Spyder, set the working directory to the `energyplus-gym` folder (using the folder icon in the top right).
 
+Now Spyder will use the Python and libraries from `eplus_test`.
 
-
-&nbsp;   conda activate eplus\_test
-
-&nbsp;   conda install spyder-kernels
-
-
-
-2\. Open Spyder (from Anaconda Navigator or base environment) and go to:
-
-&nbsp;  Tools → Preferences → Python interpreter
-
-&nbsp;  Choose “Use the following Python interpreter” and select:
-
-
-
-&nbsp;      <your Anaconda path>/envs/eplus\_test/python.exe
-
-
-
-3\. Apply, restart Spyder, and open the `energyplus-gym` folder as your working directory.
 
 
 

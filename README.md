@@ -77,7 +77,7 @@ If you want to use this project in Spyder with the `eplus_test` environment:
 
    ```bash
    conda activate eplus_test
-   conda install spyder-kernels
+   conda install spyder
    ```
 
 2. Start Spyder from the same environment:

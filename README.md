@@ -70,9 +70,9 @@ Choose where you want to keep the project and clone it there:
 ```bash
 cd /path/where/you/want/the/project
 ```
-
+```bash
 git clone https://github.com/khalil-alsayed/energyplus-gym.git
-
+```
 ```bash
 cd energyplus-gym
 ```
@@ -80,19 +80,13 @@ cd energyplus-gym
 #3. Install the package
 ----------------------
 
-Editable install (recommended while developing):
-
-```bash
-pip install -e .
-```
-
-If you don’t need editable mode:
+Install dependencies:
 
 ```bash
 pip install .
 ```
 
-or, to also install example dependencies:
+and, to also install example dependencies:
 
 ```bash
 pip install .[examples]

@@ -1,3 +1,54 @@
+EnergyPlus requirement
+======================
+
+To run the `eplus_gym` environments, you **must** have the EnergyPlus simulator
+installed locally. The Python code in this project talks to EnergyPlus through
+its official Python API, `pyenergyplus`. Without EnergyPlus, you will be able to
+install the package, but any call to `env.reset()` or any simulation run will fail.
+
+Required EnergyPlus version
+---------------------------
+
+This project was developed and tested with:
+
+    EnergyPlus 25.1
+
+The supplied `model.idf` was generated for version 25.1 (line `Version,25.1;`).
+Using the **same version** of EnergyPlus is strongly recommended to avoid IDF
+compatibility issues. Newer or older versions may require upgrading the IDF
+with the EnergyPlus IDFVersionUpdater tool.
+
+Recommended install locations (Windows)
+---------------------------------------
+
+On Windows, the simplest setup is to install EnergyPlus in one of the default
+locations, for example:
+
+```bash
+    C:\EnergyPlusV25-1-0\
+    C:\Program Files\EnergyPlusV25-1-0\
+```
+
+If you use one of these standard folders, `eplus_gym` can usually detect the
+EnergyPlus Python API automatically.
+
+Quick check
+-----------
+
+Before running any examples, you can quickly verify that the EnergyPlus Python
+API is available in your environment:
+
+    conda activate eplus_test   # or your environment name
+    python -c "from pyenergyplus.api import EnergyPlusAPI; print(EnergyPlusAPI)"
+
+If this prints something like:
+
+    <class 'pyenergyplus.api.EnergyPlusAPI'>
+
+then EnergyPlus is correctly installed and its Python API is visible to your
+environment. You can now start to download the project.
+
+
 Quick test installation for `energyplus-gym`
 ===========================================
 

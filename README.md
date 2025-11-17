@@ -6,37 +6,55 @@ This guide shows how to quickly test `energyplus-gym` in a fresh Conda environme
 1. Create and activate a new Conda environment
 ----------------------------------------------
 
+```bash
 conda create -n eplus_test python=3.11
 conda activate eplus_test
+```
 
 2. Clone the repository
 -----------------------
 
 Choose where you want to keep the project and clone it there:
 
+```bash
 cd /path/where/you/want/the/project
+```
+
 git clone https://github.com/khalil-alsayed/energyplus-gym.git
+
+```bash
 cd energyplus-gym
+```
 
 3. Install the package
 ----------------------
 
 Editable install (recommended while developing):
 
+```bash
 pip install -e .
+```
 
 If you don’t need editable mode:
 
+```bash
 pip install .
+```
+
 # or, to also install example dependencies:
-# pip install .[examples]
+
+```bash
+pip install .[examples]
+```
 
 4. Verify the installation
 --------------------------
 
 Run a quick import test:
 
+```bash
 python -c "import eplus_gym; print('energyplus-gym imported successfully')"
+```
 
 If this prints the message without errors, the installation works.
 
@@ -47,12 +65,16 @@ To use this project in Spyder with the `eplus_test` environment:
 
 1. Install Spyder inside the environment (once):
 
+```bash
    conda activate eplus_test
    conda install spyder
+```
 
 2. Start Spyder from the same environment:
 
+```bash
    spyder
+```
 
 3. Configure the working directory to the Q-Transformer example folder:
 
@@ -100,23 +122,33 @@ If you created a temporary test setup (for example, the `eplus_test` Conda envir
 1. Open Anaconda Prompt.
 2. List your environments (optional, just to see their names):
 
+ ```bash
    conda env list
+ ```
 
 3. Make sure you are not inside `eplus_test`:
 
+```bash
    conda deactivate
+```
 
 4. Remove the test environment:
 
+```bash
    conda remove --name eplus_test --all
+```
 
 5. Verify that it is gone:
 
+```bash
    conda env list
+```
 
 If you created additional test environments (for example `test_eplusgym`), you can remove them in the same way:
 
+```bash
 conda remove --name test_eplusgym --all
+```
 
 6.3 Delete the test copy of the project folder
 ----------------------------------------------

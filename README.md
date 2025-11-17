@@ -3,7 +3,7 @@ Quick test installation for `energyplus-gym`
 
 This guide shows how to quickly test `energyplus-gym` in a fresh Conda environment and, optionally, how to run it from Spyder.
 
-1. Create and activate a new Conda environment
+#1. Create and activate a new Conda environment
 ----------------------------------------------
 
 ```bash
@@ -11,7 +11,7 @@ conda create -n eplus_test python=3.11
 conda activate eplus_test
 ```
 
-2. Clone the repository
+#2. Clone the repository
 -----------------------
 
 Choose where you want to keep the project and clone it there:
@@ -26,7 +26,7 @@ git clone https://github.com/khalil-alsayed/energyplus-gym.git
 cd energyplus-gym
 ```
 
-3. Install the package
+#3. Install the package
 ----------------------
 
 Editable install (recommended while developing):
@@ -41,13 +41,13 @@ If you don’t need editable mode:
 pip install .
 ```
 
-# or, to also install example dependencies:
+or, to also install example dependencies:
 
 ```bash
 pip install .[examples]
 ```
 
-4. Verify the installation
+#4. Verify the installation
 --------------------------
 
 Run a quick import test:
@@ -58,7 +58,7 @@ python -c "import eplus_gym; print('energyplus-gym imported successfully')"
 
 If this prints the message without errors, the installation works.
 
-5. Using Spyder 
+#5. Using Spyder 
 --------------------------
 
 To use this project in Spyder with the `eplus_test` environment:
@@ -105,7 +105,7 @@ After this, Spyder will:
 - Use the Python and libraries from the `eplus_test` environment, and
 - Start in energyplus-gym\examples\Q-transformer, so all Python scripts and imports in that folder (e.g. `from dqn_agent import DQNAgent`) will work automatically.
 
-6. Cleaning up the test environment (optional)
+#6. Cleaning up the test environment (optional)
 ----------------------------------------------
 
 If you created a temporary test setup (for example, the `eplus_test` Conda environment and a test clone of the repository) and you want to remove it, follow these steps.

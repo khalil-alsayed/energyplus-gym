@@ -65,18 +65,30 @@ conda activate eplus_test
 #2. Clone the repository
 -----------------------
 
-Choose where you want to keep the project and clone it there:
+
+You can either:
+
+- Clone with Git (recommended, requires Git to be installed):
 
 ```bash
-cd /path/where/you/want/the/project
+  cd /path/where/you/want/the/project
 ```
 ```bash
-git clone https://github.com/khalil-alsayed/energyplus-gym.git
+  git clone https://github.com/khalil-alsayed/energyplus-gym.git
 ```
 ```bash
-cd energyplus-gym
+  cd energyplus-gym
 ```
 
+- Or download as ZIP (no Git needed):
+
+  1. Go to the GitHub page of the project.
+  2. Click "Code" → "Download ZIP".
+  3. Unzip the archive.
+  4. Open a terminal / Anaconda Prompt and move into the project folder:
+     ```bash
+     cd /path/to/unzipped/energyplus-gym
+     ```
 #3. Install the package
 ----------------------
 

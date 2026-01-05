@@ -91,6 +91,7 @@ You can either:
      ```
 #3. Install the package
 ----------------------
+## User installation (recommended)
 
 Install dependencies:
 
@@ -102,6 +103,24 @@ and, to also install example dependencies:
 
 ```bash
 pip install .[examples]
+```
+## OR Developer / contributor installation (editable)
+
+If you previously installed an older version, remove it (optional but recommended)
+
+```bash
+pip uninstall -y eplus-gym eplus_gym
+```
+Now install in editable mode
+
+```bash
+pip install -e .
+```
+
+also install example dependencies:
+
+```bash
+pip install -e ".[examples]"
 ```
 
 #4. Verify the installation

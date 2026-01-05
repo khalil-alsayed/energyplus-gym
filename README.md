@@ -93,7 +93,13 @@ You can either:
 ----------------------
 ## User installation (recommended)
 
-Install dependencies:
+If (and only if) you previously installed `eplus_gym`, uninstall it first to avoid importing an old `site-packages`:
+
+```bash
+pip uninstall -y eplus-gym eplus_gym
+```
+ 
+Now install dependencies:
 
 ```bash
 pip install .

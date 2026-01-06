@@ -158,7 +158,7 @@ class AmphitheaterEnv(EnergyPlusEnv):
                            40.0,                                   #IAT
                            2000,                       #CO2
                            90152325.1800933,                       #DH
-                           675,                                    #time 
+                           672,                                    #time 
                            5_037_597.12                            #elec
                            ])                          
 

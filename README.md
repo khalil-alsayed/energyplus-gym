@@ -166,11 +166,11 @@ To use this project in Spyder with the `eplus_test` environment:
      Tools -> Preferences -> Working directory
    - Under "Startup" -> "The following directory", set the path to:
 
-     path_where_you_cloned_the_project\energyplus-gym\examples\Q-transformer
+     path_where_you_cloned_the_project\energyplus-gym\src\eplus_gym\agents
 
      For example:
 
-     C:\Users\khali\Documents\energyplus-gym\examples\Q-transformer
+     C:\Users\khali\Documents\energyplus-gym\src\eplus_gym\agents
 
    - (Optional but recommended) Under "New consoles", also select
      "The following directory" and use the same path.
@@ -185,7 +185,7 @@ To use this project in Spyder with the `eplus_test` environment:
 After this, Spyder will:
 
 - Use the Python and libraries from the `eplus_test` environment, and
-- Start in energyplus-gym\examples\Q-transformer, so all Python scripts and imports in that folder (e.g. `from dqn_agent import DQNAgent`) will work automatically.
+- Start in energyplus-gym\src\eplus_gym\agents, so all Python scripts and imports in that folder will work automatically.
 
 #6. Cleaning up the test environment (optional)
 ----------------------------------------------

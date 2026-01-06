@@ -26,7 +26,7 @@ from eplus_gym.envs.energyplus import (
     _resolve_output_dir,
     _find_project_root,
 )
-from dqn_agent import DQNAgent
+from eplus_gym.agents.Q_transformer.dqn_agent import Q_transformer
 
 # -----------------------------------------------------------------------------
 # Helper utilities                                                            |
@@ -64,7 +64,7 @@ if __name__ == '__main__':
     
     env = AmphitheaterEnv(
         env_config={"output": str(output_dir),"location": "luxembourg"}, new_begin_month=1, new_end_month=1, new_begin_day=1, new_end_day=7,
-        train=True, w_t=80, w_co2=7, w_dh=1, w_elc=4)
+        train=True)
     env.runner_config.csv = False
 
     best_score = -np.inf
@@ -74,7 +74,7 @@ if __name__ == '__main__':
     
 
 
-    agent = DQNAgent(
+    agent = Q_transformer(
         gamma=0.99,
         epsilon=1,
         lr=0.001,
@@ -82,11 +82,11 @@ if __name__ == '__main__':
         n_actions=env.action_space.n,
         mem_size=250000,
         eps_min=0.05,
-        batch_size=64,
+        batch_size=128,
         replace=384,
         eps_dec=0.9 * n_episodes,
         chkpt_dir=checkpoint_dir,
-        algo='DQNAgent',
+        algo='Q-transformer',
         env_name='energyplus'
     )
 
@@ -209,16 +209,14 @@ if __name__ == '__main__':
     
 #%%Deployment Q-transformer (Adaptation test)
 
-number_of_days_to_presents=10
-
 env = AmphitheaterEnv(
     env_config={"output": str(output_dir),"location": "luxembourg"}, new_begin_month=1, new_end_month=1, new_begin_day=1, new_end_day=10,
-    train=True, w_t=80, w_co2=7, w_dh=1, w_elc=4)
+    train=False)
 
 env.runner_config.csv = True
 
 # Create and load your DQN agent
-agent = DQNAgent(
+agent = Q_transformer(
     gamma=0.99,
     epsilon=0,
     lr=0.001,
@@ -230,7 +228,7 @@ agent = DQNAgent(
     replace=384,
     eps_dec=0.9 * n_episodes * 366,
     chkpt_dir=checkpoint_dir,
-    algo='DQNAgent',
+    algo='Q-transformer',
     env_name='energyplus'
 )
 
@@ -259,7 +257,7 @@ while not done:
     action = env.valid_actions[action_idx]  # discrete -> continuous
 
     score += reward
-    done = terminated 
+    done = terminated or truncated
     observation = observation_
     state_window.append(observation)
     # Convert to real-world scale (optional if you need it)
@@ -281,7 +279,9 @@ env.close()
 # -------------------------------------------------------------
 CSV_PATH = Path(output_dir) / "eplusout.csv"
 
-DATE_SLICE = slice(96, 96*10)             # one week → 672 rows
+DATE_SLICE = slice(96, 96*17)             # one week → 672 rows
+#DATE_SLICE = slice(192, 288)             # one day
+
 SMOOTH_WIN = 15                          # Savitzky–Golay window (odd)
 SMOOTH_POLY= 3                           # Savitzky–Golay poly order
 FIGSIZE    = (50, 7)
@@ -530,14 +530,14 @@ n_episodes = 366
 
 
 env = AmphitheaterEnv(
-    env_config={"output": str(output_dir), "location": "australia"}, new_begin_month=1, new_end_month=12, new_begin_day=1, new_end_day=31,
+    env_config={"output": str(output_dir), "location": "USA"}, new_begin_month=1, new_end_month=12, new_begin_day=1, new_end_day=31,
     train=False, w_t=80, w_co2=7, w_dh=1, w_elc=4)
 env.runner_config.csv = True
 
 
 
 # Create and load your DQN agent
-agent = DQNAgent(
+agent = Q_transformer(
     gamma=0.99,
     epsilon=0,
     lr=0.001,
@@ -549,7 +549,7 @@ agent = DQNAgent(
     replace=384,
     eps_dec=0.9 * n_episodes * 366,
     chkpt_dir=checkpoint_dir,
-    algo='DQNAgent',
+    algo='Q-transformer',
     env_name='energyplus'
 )
 

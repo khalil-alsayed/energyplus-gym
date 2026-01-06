@@ -852,7 +852,7 @@ class EnergyPlusEnv(gym.Env, metaclass=abc.ABCMeta):
             [obs["iat"]] +  # IAT
             [obs["co2"]] +  # CO2
             [obs["dh"]] +  # DH
-            [self.timestep % 675] +  # time
+            [self.timestep % 672] +  # time
             [0],  # elec
             dtype='float32'), {}  # new
 
@@ -864,7 +864,7 @@ class EnergyPlusEnv(gym.Env, metaclass=abc.ABCMeta):
         truncated = False
         # in case of training in complete month----------------------------------------
         
-        if self.timestep%675==674 and self.train==True:
+        if self.timestep%672==0 and self.train==True:
             truncated = True
           
         #-----------------------------------------------------------
@@ -959,7 +959,7 @@ class EnergyPlusEnv(gym.Env, metaclass=abc.ABCMeta):
             [obs["iat"]]+                                                #IAT
             [obs["co2"]]+                                                #CO2
             [obs["dh"]]+                                                 #DH
-            [self.timestep%675]+                                          #time
+            [self.timestep%672]+                                          #time
             [obs["elec"]],                                               #elec
             dtype='float32')
         

@@ -7,14 +7,14 @@ Created on Wed Feb 28 16:32:39 2024
 
 import numpy as np
 import torch as T
-from deep_q_network import DeepQNetwork
-from replay_memory import ReplayBuffer
+from eplus_gym.agents.Q_transformer.deep_q_network import DeepQNetwork
+from eplus_gym.agents.Q_transformer.replay_memory import ReplayBuffer
 from sklearn.preprocessing import MinMaxScaler
 import pandas as pd
 from eplus_gym.envs.energyplus import _find_project_root
 
 
-class DQNAgent(object):
+class Q_transformer(object):
     def __init__(self, gamma, epsilon, lr, input_dims, n_actions,
                  mem_size, eps_min, batch_size, replace, eps_dec,
                  chkpt_dir, algo, env_name):
@@ -68,7 +68,7 @@ class DQNAgent(object):
         # 3) Normalizer
         # -------------
         proj_root = _find_project_root()
-        qtx_dir = (proj_root / "examples" / "Q-transformer" / "Q-transformer.csv")
+        qtx_dir = (proj_root / "src" / "eplus_gym"  / "agents" / "Q_transformer" / "Q-transformer.csv")
         self.sample_data = pd.read_csv(qtx_dir).to_numpy()
         self.scaler = MinMaxScaler()
         self.scaler.fit(self.sample_data)

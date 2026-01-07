@@ -10,6 +10,18 @@
 </div>
 
 
+<p align="center">
+  <a href="https://eusipco2025.org" target="_blank">
+    <img src="https://github.com/khalil-alsayed/energyplus-gym/blob/main/logo/logo-iecon2025-trans.jpg" alt="IECON Logo" width="400"/>
+  </a>
+</p>
+
+<p align="center">
+  <strong>📣 Accepted at <a href="https://IECON2025.org" target="_blank">IECON 2025</a>, Madrid, Spain!</strong>
+</p>
+
+
+
 EnergyPlus requirement
 ======================
 

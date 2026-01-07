@@ -7,6 +7,8 @@
 [![IEEE Paper (DOI)](https://img.shields.io/badge/IEEE%20Paper-DOI%3A%2010.1109%2FIECON58223.2025.11221485-blue)](https://doi.org/10.1109/IECON58223.2025.11221485)
 [![TechRxiv Preprint (DOI)](https://img.shields.io/badge/TechRxiv-DOI%3A%2010.36227%2Ftechrxiv.176281127.75918518%2Fv1-orange)](https://doi.org/10.36227/techrxiv.176281127.75918518/v1)
 
+</div>
+
 
 EnergyPlus requirement
 ======================

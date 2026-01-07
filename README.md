@@ -263,6 +263,45 @@ also install example dependencies:
 pip install -e ".[examples]"
 ```
 
+
+
+
+
+
+
+
+
+
+
+
+## Fix (permanent): `error: subprocess-exited-with-error` & `error: metadata-generation-failed`
+
+On Windows this usually happens when pip cannot find a prebuilt NumPy wheel that matches your Python, so it falls back to compiling (which needs Visual C++ Build Tools).
+
+1. Install Visual Studio Build Tools 2022
+
+- Select: Desktop development with C++
+- Make sure these are included:
+    - MSVC v143 build tools
+    - Windows 10/11 SDK
+
+2. Close and reopen Anaconda Prompt, then:
+   
+```bash
+conda activate eplus_test
+python -m pip install -U pip setuptools wheel
+pip install .
+pip install .[examples]
+```
+ Or for Developer / contributor installation
+
+```bash
+conda activate eplus_test
+python -m pip install -U pip setuptools wheel
+pip install -e .
+pip install -e ".[examples]"
+```
+
 #4. Verify the installation
 --------------------------
 

@@ -95,7 +95,7 @@ If this prints something like:
 then EnergyPlus is correctly installed and its Python API is visible to your
 environment. You can now start to download the project.
 
-## Fix (permanent): `ModuleNotFoundError: No module named 'pyenergyplus'`
+## Fix (if it happens): `ModuleNotFoundError: No module named 'pyenergyplus'`
 
 
 If the quick check fails with:
@@ -272,7 +272,7 @@ pip install -e ".[examples]"
 
 
 
-## Fix (permanent): `error: subprocess-exited-with-error` & `error: metadata-generation-failed`
+## Fix (if it happens): `error: subprocess-exited-with-error` & `error: metadata-generation-failed`
 
 On Windows this usually happens when pip cannot find a prebuilt NumPy wheel that matches your Python, so it falls back to compiling (which needs Visual C++ Build Tools).
 

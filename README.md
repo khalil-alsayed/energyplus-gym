@@ -11,7 +11,7 @@
 
 
 <p align="center">
-  <a href="https://eusipco2025.org" target="_blank">
+  <a href="https://iecon2025.org" target="_blank">
     <img src="https://github.com/khalil-alsayed/energyplus-gym/blob/main/logo/logo-iecon2025-trans.jpg" alt="IECON Logo" width="400"/>
   </a>
 </p>

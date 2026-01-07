@@ -267,3 +267,9 @@ After these steps:
 
 - Your original project and main Conda environment remain intact.
 - All temporary test environments and test clones are removed.
+
+
+## Licensing
+- Code: MIT (see `LICENSE`)
+- Paper/preprint & supplementary research materials: Khalil Al Sayed Community Research License (see `LICENSE-PAPER.md`)
+

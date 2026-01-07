@@ -117,7 +117,7 @@ To make it work, you must add:
 
 This makes the variables load automatically every time you activate the conda env.
 
-Windows (Anaconda Prompt)
+**Windows (Anaconda Prompt)**
 
 1. Activate your conda environment:
 
@@ -142,7 +142,7 @@ Paste (edit `EPLUS_DIR` if needed):
 
 ```bash
 @echo off
-set "EPLUS_DIR=C:\EnergyPlusV25-2-0"
+set "EPLUS_DIR=C:\EnergyPlusV25-1-0"
 
 rem Save old values (so we can restore on deactivate)
 set "_OLD_PYTHONPATH=%PYTHONPATH%"

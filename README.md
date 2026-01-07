@@ -40,15 +40,14 @@ Overall, **energyplus-gym** aims to make sequence-aware RL for building control 
 
 ---
 
+EnergyPlus requirement
+======================
 
 <p align="center">
   <a href="https://eusipco2025.org" target="_blank">
     <img src="https://github.com/khalil-alsayed/energyplus-gym/blob/main/logo/energyplus.jpg" alt="energyplus Logo" width="400"/>
   </a>
 </p>
-
-EnergyPlus requirement
-======================
 
 To run the `eplus_gym` environments, you **must** have the EnergyPlus simulator
 installed locally. The Python code in this project talks to EnergyPlus through

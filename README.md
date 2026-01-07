@@ -113,9 +113,7 @@ To make it work, you must add:
 - the EnergyPlus install folder to `PYTHONPATH` (so Python can import `pyenergyplus`)
 - the EnergyPlus install folder to `PATH` (so Windows can find required DLLs) 
 
-1) Permanent fix (recommended for Conda environments)
-
-This makes the variables load automatically every time you activate the conda env.
+Permanent fix (recommended for Conda environments), this makes the variables load automatically every time you activate the conda env.
 
 **Windows (Anaconda Prompt)**
 

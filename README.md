@@ -83,7 +83,7 @@ Quick check
 -----------
 
 Before running any examples, you can quickly verify that the EnergyPlus Python
-API is available in your environment:
+API is available in your environment (environment already created in #1 of Quick test installation for energyplus-gym section):
 
     conda activate eplus_test   # or your environment name
     python -c "from pyenergyplus.api import EnergyPlusAPI; print(EnergyPlusAPI)"
@@ -102,7 +102,7 @@ If the quick check fails with:
 
 ```text
 ModuleNotFoundError: No module named 'pyenergyplus'
-
+```
 
 it usually means EnergyPlus is installed, but its Python API folder is not on your Python path.
 

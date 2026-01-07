@@ -9,7 +9,7 @@ Created on Tue Feb 18 15:55:34 2025
 
 import torch
 import torch.nn as nn
-from eplus_gym.agents.Q_transformer.positional_encoding import PositionalEncoding          # as in your current code
+from eplus_gym.agents.q_transformer.positional_encoding import PositionalEncoding          # as in your current code
 
 class TransformerModel(nn.Module):
     """

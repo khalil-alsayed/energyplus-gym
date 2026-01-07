@@ -11,7 +11,7 @@ import torch.nn as nn
 import torch.optim as optim
 
 # Import our Transformer-based Q model
-from eplus_gym.agents.DDQN_BiLSTM.BiLSTM_model import BiLSTMModel
+from eplus_gym.agents.ddqn_bilstm.BiLSTM_model import BiLSTMModel
 
 class DeepQNetwork(nn.Module):
     def __init__(

@@ -7,8 +7,8 @@ Created on Wed Feb 28 16:32:39 2024
 
 import numpy as np
 import torch as T
-from eplus_gym.agents.DDQN_MLP.deep_q_network import DeepQNetwork
-from eplus_gym.agents.DDQN_MLP.replay_memory import ReplayBuffer
+from eplus_gym.agents.ddqn_mlp.deep_q_network import DeepQNetwork
+from eplus_gym.agents.ddqn_mlp.replay_memory import ReplayBuffer
 from eplus_gym.envs.energyplus import _find_project_root
 
 from sklearn.preprocessing import MinMaxScaler
@@ -71,7 +71,7 @@ class DDQN_MLP(object):
         # 3) Normalizer
         # -------------
         proj_root = _find_project_root()
-        qtx_dir = (proj_root / "src" / "eplus_gym"  / "agents" / "DDQN_MLP" / "DDQN_MLP.csv")
+        qtx_dir = (proj_root / "src" / "eplus_gym"  / "envs" / "assets" / "normalization" / "DDQN_MLP.csv")
         self.sample_data = pd.read_csv(qtx_dir).to_numpy()
         self.scaler = MinMaxScaler()
         self.scaler.fit(self.sample_data)

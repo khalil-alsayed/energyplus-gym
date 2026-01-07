@@ -11,7 +11,7 @@ import torch.nn as nn
 import torch.optim as optim
 
 # Import our Transformer-based Q model
-from eplus_gym.agents.Q_transformer.transformer_model import TransformerModel
+from eplus_gym.agents.q_transformer.transformer_model import TransformerModel
 
 class DeepQNetwork(nn.Module):
     def __init__(

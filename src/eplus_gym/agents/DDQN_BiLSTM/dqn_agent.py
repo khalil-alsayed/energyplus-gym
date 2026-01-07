@@ -7,8 +7,8 @@ Created on Wed Feb 28 16:32:39 2024
 
 import numpy as np
 import torch as T
-from eplus_gym.agents.DDQN_BiLSTM.deep_q_network import DeepQNetwork
-from eplus_gym.agents.DDQN_BiLSTM.replay_memory import ReplayBuffer
+from eplus_gym.agents.ddqn_bilstm.deep_q_network import DeepQNetwork
+from eplus_gym.agents.ddqn_bilstm.replay_memory import ReplayBuffer
 from sklearn.preprocessing import MinMaxScaler
 import pandas as pd
 from eplus_gym.envs.energyplus import _find_project_root
@@ -69,7 +69,7 @@ class DDQN_BiLSTM(object):
         # 3) Normalizer
         # -------------
         proj_root = _find_project_root()
-        qtx_dir = (proj_root / "src" / "eplus_gym"  / "agents" / "DDQN_BiLSTM" / "DDQN_BiLSTM.csv")
+        qtx_dir = (proj_root / "src" / "eplus_gym"  / "envs" / "assets" / "normalization" / "DDQN_BiLSTM.csv")
         self.sample_data = pd.read_csv(qtx_dir).to_numpy()
         self.scaler = MinMaxScaler()
         self.scaler.fit(self.sample_data)

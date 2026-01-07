@@ -21,21 +21,21 @@
 </p>
 
 
-**energyplus-gym** is a lightweight **Gymnasium-compatible** Python toolkit for running **EnergyPlus** simulations as reinforcement-learning environments for **HVAC control**. It provides a reproducible sandbox to train and evaluate deep RL agents on a realistic building case study (a **400 m² university amphitheatre**) by controlling key AHU variables such as **supply-air temperature setpoint, outdoor-air mass flow rate, and AHU ON/OFF**. :contentReference[oaicite:0]{index=0}
+**energyplus-gym** is a lightweight **Gymnasium-compatible** Python toolkit for running **EnergyPlus** simulations as reinforcement-learning environments for **HVAC control**. It provides a reproducible sandbox to train and evaluate deep RL agents on a realistic building case study (a **400 m² university amphitheatre**) by controlling key AHU variables such as **supply-air temperature setpoint, outdoor-air mass flow rate, and AHU ON/OFF**. 
 
 This GitHub accompanies the paper:
 
 📄 *Attention Makes Buildings Smarter*  
 - **IEEE (IECON 2025)** — DOI: [10.1109/IECON58223.2025.11221485](https://doi.org/10.1109/IECON58223.2025.11221485)  
-- **TechRxiv preprint** — DOI: [10.36227/techrxiv.176281127.75918518/v1](https://doi.org/10.36227/techrxiv.176281127.75918518/v1) :contentReference[oaicite:1]{index=1}
+- **TechRxiv preprint** — DOI: [10.36227/techrxiv.176281127.75918518/v1](https://doi.org/10.36227/techrxiv.176281127.75918518/v1) 
 
 It includes:
 - An EnergyPlus-based RL environment with ready-to-use building/weather assets
-- Three agents implemented and benchmarked: **DDQN (MLP)**, **DDQN (Bi-LSTM)**, and the proposed **Q-Transformer** (Transformer encoder–decoder integrated into DDQN to process 24h observation sequences) :contentReference[oaicite:2]{index=2}
+- Three agents implemented and benchmarked: **DDQN (MLP)**, **DDQN (Bi-LSTM)**, and the proposed **Q-Transformer** (Transformer encoder–decoder integrated into DDQN to process 24h observation sequences) 
 - Scripts for **weekly adaptation** and **year-long generalisation** experiments, including cross-climate evaluation
 - Tools to log and plot deployment behavior (temperature/CO₂/energy trajectories + control actions)
 
-Overall, **energyplus-gym** aims to make sequence-aware RL for building control easier to reproduce and fairly compare, highlighting the benefit of transformer-based policies for partially observable HVAC dynamics. :contentReference[oaicite:3]{index=3}
+Overall, **energyplus-gym** aims to make sequence-aware RL for building control easier to reproduce and fairly compare, highlighting the benefit of transformer-based policies for partially observable HVAC dynamics. 
 
 
 ---

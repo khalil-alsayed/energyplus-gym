@@ -1,3 +1,7 @@
+[![TestPyPI](https://img.shields.io/badge/TestPyPI-eplus--gym--khalil-blue)](https://test.pypi.org/project/eplus-gym-khalil/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+
 EnergyPlus requirement
 ======================
 

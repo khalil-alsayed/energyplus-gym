@@ -3,13 +3,27 @@ requires = ["setuptools>=70", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "eplus-gym"
-version = "0.1.0"
+name = "eplus-gym-khalil"
+version = "0.1.1"
 description = "EnergyPlus environments for Gymnasium"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
-authors = [{ name = "Your Name", email = "you@example.com" }]
+
+authors = [{ name = "Khalil Al Sayed", email = "khalil.alsayed198@gmail.com" }]
+
+keywords = ["EnergyPlus", "Gymnasium", "RL", "HVAC", "BEMS"]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
 
 # Core dependencies (used inside src/eplus_gym)
 dependencies = [
@@ -18,7 +32,6 @@ dependencies = [
   "pandas>=1.5,<3.0"
 ]
 
-# Extra dependencies for examples / Q-transformer
 [project.optional-dependencies]
 examples = [
   "matplotlib>=3.5",
@@ -26,7 +39,10 @@ examples = [
   "scikit-learn>=1.3"
 ]
 
-# NOTE: EnergyPlus itself is not installed by pip. Users install it separately.
+[project.urls]
+Homepage = "https://github.com/khalilalsayed/energyplus-gym"
+Repository = "https://github.com/khalilalsayed/energyplus-gym"
+Issues = "https://github.com/khalilalsayed/energyplus-gym/issues"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

@@ -73,7 +73,7 @@ On Windows, the simplest setup is to install EnergyPlus in one of the default
 locations, for example:
 
 ```bash
-    C:\EnergyPlusV25-1-0\
+C:\EnergyPlusV25-1-0\
 ```
 
 If you use one of these standard folders, `eplus_gym` can usually detect the

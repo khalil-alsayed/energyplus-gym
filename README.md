@@ -44,7 +44,7 @@ EnergyPlus requirement
 ======================
 
 <p align="center">
-  <a href="https://eusipco2025.org" target="_blank">
+  <a href="https://energyplus.net" target="_blank">
     <img src="https://github.com/khalil-alsayed/energyplus-gym/blob/main/logo/energyplus.jpg" alt="energyplus Logo" width="400"/>
   </a>
 </p>

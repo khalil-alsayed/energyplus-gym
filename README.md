@@ -179,7 +179,7 @@ python -c "from pyenergyplus.api import EnergyPlusAPI; print(EnergyPlusAPI)"
 
 ---
 
-## Install package `energyplus-gym`
+## Install package
 
 This guide shows how to quickly test `energyplus-gym` in a fresh Conda environment and, optionally, how to run it from Spyder.
 
@@ -297,25 +297,27 @@ python -c "import eplus_gym; print('energyplus-gym imported successfully')"
 
 If this prints the message without errors, the installation works.
 
-### 5. Using Spyder 
+# Usage
+
+## Using Spyder 
 
 
 To use this project in Spyder with the `eplus_test` environment:
 
-1. Install Spyder inside the environment (once):
+### 1. Install Spyder inside the environment (once):
 
 ```bash
    conda activate eplus_test
    conda install spyder
 ```
 
-2. Start Spyder from the same environment:
+### 2. Start Spyder from the same environment:
 
 ```bash
    spyder
 ```
 
-3. Configure the working directory to the Q-Transformer example folder:
+### 3. Configure the working directory to the Q-Transformer example folder:
 
    This ensures that scripts such as `main.py` can import `dqn_agent.py` and other helper files without additional path tweaks.
 
@@ -334,7 +336,7 @@ To use this project in Spyder with the `eplus_test` environment:
 
    - Click Apply, then OK.
 
-4. Restart the IPython kernel / console in Spyder:
+### 4. Restart the IPython kernel / console in Spyder:
 
    - Either click "Restart kernel" in the IPython console, or
    - Close the current console and open a new one.

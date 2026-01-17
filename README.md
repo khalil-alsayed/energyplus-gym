@@ -30,7 +30,7 @@
 - [Usage](#usage)
   - [Minimal env usage](#minimal-env-usage)
   - [Training scripts](#training-scripts)
-- [Project structure (repo tree)](#Project structure (repo tree))
+- [Project structure](#Project structure (repo tree))
 - [Troubleshooting](#troubleshooting)
 - [Citation](#citation)
 - [License](#license)
@@ -403,7 +403,10 @@ After this, Spyder will:
 └── tests/
     └── test_smoke.py
 
+> Note: `runs/`, `eplus_outputs/`, `dist/`, `__pycache__/`, and `*.egg-info/` are generated during training/runs/build and are ignored by Git.
 
+
+```
 #6. Cleaning up the test environment (optional)
 ----------------------------------------------
 

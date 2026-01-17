@@ -40,8 +40,10 @@ Overall, **energyplus-gym** aims to make sequence-aware RL for building control 
 
 ---
 
-Requirements
+Installation
 ======================
+
+## Requirements
 
 <p align="center">
   <a href="https://energyplus.net" target="_blank">
@@ -54,8 +56,7 @@ installed locally. The Python code in this project talks to EnergyPlus through
 its official Python API, `pyenergyplus`. Without EnergyPlus, you will be able to
 install the package, but any call to `env.reset()` or any simulation run will fail.
 
-Required EnergyPlus version
----------------------------
+### Required EnergyPlus version
 
 This project was developed and tested with:
 
@@ -66,8 +67,7 @@ Using the **same version** of EnergyPlus is strongly recommended to avoid IDF
 compatibility issues. Newer or older versions may require upgrading the IDF
 with the EnergyPlus IDFVersionUpdater tool.
 
-Recommended install locations (Windows)
----------------------------------------
+### Recommended install locations (Windows)
 
 On Windows, the recommended setup is to install EnergyPlus in the default location(s), for example:
 
@@ -78,8 +78,7 @@ C:\EnergyPlusV25-1-0\
 If you install it in a different standard folder, `eplus_gym` cannot automatically detect the EnergyPlus Python API.
 
 
-Quick check
------------
+### Quick check
 
 Before running any examples, you can quickly verify that the EnergyPlus Python
 API is available in your environment (environment already created in #1 of Quick test installation for energyplus-gym section):
@@ -94,7 +93,7 @@ If this prints something like:
 then EnergyPlus is correctly installed and its Python API is visible to your
 environment. You can now start to download the project.
 
-## Fix (if it happens): `ModuleNotFoundError: No module named 'pyenergyplus'`
+### Fix (if it happens): `ModuleNotFoundError: No module named 'pyenergyplus'`
 
 
 If the quick check fails with:
@@ -180,8 +179,7 @@ python -c "from pyenergyplus.api import EnergyPlusAPI; print(EnergyPlusAPI)"
 
 ---
 
-Install package `energyplus-gym`
-===========================================
+## Install package `energyplus-gym`
 
 This guide shows how to quickly test `energyplus-gym` in a fresh Conda environment and, optionally, how to run it from Spyder.
 

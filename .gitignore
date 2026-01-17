@@ -1,8 +1,20 @@
-# Python build/cache
-__*.pyc
+# Python bytecode / cache
+__pycache__/
+*.py[cod]
+
+# Python build artifacts
 build/
 dist/
 *.egg-info/
+*.egg
+
+# Test / tooling artifacts
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
 
 # Keep folder, ignore its contents
 /runs/*
@@ -11,12 +23,13 @@ dist/
 /eplus_outputs/*
 !/eplus_outputs/.gitkeep
 
-# Large artifacts
+# Logs
+*.log
+
+# Large artifacts (optional)
 *.pt
 *.pth
 *.ckpt
 *.onnx
 *.h5
 *.npz
-*.tar
-*.zip

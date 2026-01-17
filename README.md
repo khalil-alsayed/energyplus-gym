@@ -30,7 +30,7 @@
 - [Usage](#usage)
   - [Minimal env usage](#minimal-env-usage)
   - [Training scripts](#training-scripts)
-- [Project structure](#project structure(repo tree))
+- [Project structure (repo tree)](#project-structure)
 - [Troubleshooting](#troubleshooting)
 - [Citation](#citation)
 - [License](#license)

@@ -40,7 +40,7 @@ Overall, **energyplus-gym** aims to make sequence-aware RL for building control 
 
 ---
 
-EnergyPlus requirement
+Requirements
 ======================
 
 <p align="center">
@@ -180,7 +180,7 @@ python -c "from pyenergyplus.api import EnergyPlusAPI; print(EnergyPlusAPI)"
 
 ---
 
-Quick test installation for `energyplus-gym`
+Install package `energyplus-gym`
 ===========================================
 
 This guide shows how to quickly test `energyplus-gym` in a fresh Conda environment and, optionally, how to run it from Spyder.
@@ -222,7 +222,7 @@ You can either:
      ```
 #3. Install the package
 ----------------------
-## User installation (recommended)
+### User installation (recommended)
 
 If (and only if) you previously installed `eplus_gym`, uninstall it first to avoid importing an old `site-packages`:
 
@@ -241,7 +241,7 @@ and, to also install example dependencies:
 ```bash
 pip install .[examples]
 ```
-## OR Developer / contributor installation (editable)
+### OR Developer / contributor installation (editable)
 
 If you previously installed an older version, remove it (optional but recommended)
 
@@ -271,7 +271,7 @@ pip install -e ".[examples]"
 
 
 
-## Fix (if it happens): `error: subprocess-exited-with-error` & `error: metadata-generation-failed`
+### Fix (if it happens): `error: subprocess-exited-with-error` & `error: metadata-generation-failed`
 
 On Windows this usually happens when pip cannot find a prebuilt NumPy wheel that matches your Python, so it falls back to compiling (which needs Visual C++ Build Tools).
 

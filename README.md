@@ -303,6 +303,11 @@ If this prints the message without errors, the installation works.
 
 ## Using Spyder 
 
+<p align="center">
+  <a href="https://www.spyder-ide.org/" target="_blank">
+    <img src="https://github.com/khalil-alsayed/energyplus-gym/blob/main/logo/spyder.png" alt="spyder Logo" width="400"/>
+  </a>
+</p>
 
 To use this project in Spyder with the `eplus_test` environment:
 

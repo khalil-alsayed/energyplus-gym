@@ -69,15 +69,14 @@ with the EnergyPlus IDFVersionUpdater tool.
 Recommended install locations (Windows)
 ---------------------------------------
 
-On Windows, the simplest setup is to install EnergyPlus in one of the default
-locations, for example:
+On Windows, the recommended setup is to install EnergyPlus in the default location(s), for example:
 
 ```bash
 C:\EnergyPlusV25-1-0\
 ```
 
-If you use one of these standard folders, `eplus_gym` can usually detect the
-EnergyPlus Python API automatically.
+If you install it in a different standard folder, `eplus_gym` cannot automatically detect the EnergyPlus Python API.
+
 
 Quick check
 -----------

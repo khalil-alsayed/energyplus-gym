@@ -371,7 +371,7 @@ After this, Spyder will:
 
 # Project structure (repo tree)
 
-
+```text
 .
 ├── README.md
 ├── pyproject.toml

@@ -30,7 +30,7 @@
 - [Usage](#usage)
   - [Minimal env usage](#minimal-env-usage)
   - [Training scripts](#training-scripts)
-- [Project structure (repo tree)](#project-structure)
+- [Project structure](#project-structure)
 - [Troubleshooting](#troubleshooting)
 - [Citation](#citation)
 - [License](#license)
@@ -369,7 +369,7 @@ After this, Spyder will:
 - Start in energyplus-gym\src\eplus_gym\agents, so all Python scripts and imports in that folder will work automatically.
 
 
-# Project structure (repo tree)
+# Project structure
 
 ```text
 .

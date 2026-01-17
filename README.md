@@ -427,7 +427,12 @@ After these steps:
 - All temporary test environments and test clones are removed.
 
 
-## Licensing
-- Code: MIT (see `LICENSE`)
-- Paper/preprint & supplementary research materials: Khalil Al Sayed Community Research License (see `LICENSE-PAPER.md`)
+## License & Attribution
 
+This project is licensed under the **Khalil Al Sayed Community Research License**. 
+See the `LICENSE` file for full terms.
+
+### Credits
+This work incorporates and modifies code originally developed by **Antoine Galataud** (2022). 
+The original components remain under the MIT License, and the full notice can be found 
+in the `NOTICE` file included in this repository.

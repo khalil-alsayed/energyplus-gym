@@ -1,3 +1,14 @@
+
+
+# ==============================================================================
+# Original Author: Antoine Galataud (Copyright (c) 2022, MIT License)
+# Modifications by: Khalil Al Sayed (Copyright (c) 2026)
+# 
+# This file is part of research Materials licensed under the 
+# Khalil Al Sayed Community Research License Agreement.
+# ==============================================================================
+
+
 import abc
 import os
 import threading

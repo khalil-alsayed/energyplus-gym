@@ -30,6 +30,7 @@
 - [Usage](#usage)
   - [Minimal env usage](#minimal-env-usage)
   - [Training scripts](#training-scripts)
+- [Project structure (repo tree)](#Project structure (repo tree))
 - [Troubleshooting](#troubleshooting)
 - [Citation](#citation)
 - [License](#license)
@@ -366,6 +367,42 @@ After this, Spyder will:
 
 - Use the Python and libraries from the `eplus_test` environment, and
 - Start in energyplus-gym\src\eplus_gym\agents, so all Python scripts and imports in that folder will work automatically.
+
+
+# Project structure (repo tree)
+
+
+.
+├── README.md
+├── pyproject.toml
+├── MANIFEST.in
+├── LICENSE-PAPER.md
+├── examples/
+│   └── quickstart.py
+├── scripts/
+│   ├── train_adaptation_*.py
+│   ├── train_generalisation_*.py
+│   ├── eval_adaptation_*.py
+│   └── eval_generalisation_*.py
+├── src/
+│   └── eplus_gym/
+│       ├── __init__.py
+│       ├── envs/
+│       │   ├── env.py
+│       │   ├── energyplus.py
+│       │   ├── utils.py
+│       │   └── assets/
+│       │       ├── model.idf
+│       │       ├── *.epw
+│       │       └── normalization/
+│       │           └── *.csv
+│       └── agents/
+│           ├── ddqn_mlp/
+│           ├── ddqn_bilstm/
+│           └── q_transformer/
+└── tests/
+    └── test_smoke.py
+
 
 #6. Cleaning up the test environment (optional)
 ----------------------------------------------

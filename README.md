@@ -197,7 +197,19 @@ also install example dependencies:
 pip install -e ".[examples]"
 ```
 
-If `pip install` fails with a build error, see: [Troubleshooting → `pip install` fails with a build error](#subprocess-exited-with-error0)
+If `pip install` fails with a build error, see: [Troubleshooting → pip install fails with a build error](#subprocess-exited-with-error0)
+
+### 4. Verify the installation
+
+
+Run a quick import test:
+
+```bash
+python -c "import eplus_gym; print('energyplus-gym imported successfully')"
+```
+
+If this prints the message without errors, the installation works.
+
 
 
 ---
@@ -397,7 +409,7 @@ python -c "from pyenergyplus.api import EnergyPlusAPI; print(EnergyPlusAPI)"
 
 
 
-## `pip install` fails with a build error
+## pip install fails with a build error
 
 [](#subprocess-exited-with-error0)
 
@@ -429,16 +441,6 @@ pip install -e .
 pip install -e ".[examples]"
 ```
 
-### 4. Verify the installation
-
-
-Run a quick import test:
-
-```bash
-python -c "import eplus_gym; print('energyplus-gym imported successfully')"
-```
-
-If this prints the message without errors, the installation works.
 
 
 

@@ -197,7 +197,7 @@ also install example dependencies:
 pip install -e ".[examples]"
 ```
 
-If `pip install` fails with a build error, see: [T](#subprocess-exited-with-error-link).
+If `pip install` fails with a build error, see: [pip install fails with a build error](#subprocess-exited-with-error-link).
 
 ### 4. Verify the installation
 
@@ -410,9 +410,9 @@ python -c "from pyenergyplus.api import EnergyPlusAPI; print(EnergyPlusAPI)"
 
 
 
-## T
+## pip install fails with a build error
 
-[T](#subprocess-exited-with-error-link)
+[pip install fails with a build error](#subprocess-exited-with-error-link)
 
 
 ### Fix (if it happens): `error: subprocess-exited-with-error` & `error: metadata-generation-failed`

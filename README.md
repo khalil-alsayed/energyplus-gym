@@ -110,89 +110,9 @@ If this prints something like:
 then EnergyPlus is correctly installed and its Python API is visible to your
 environment. You can now start to download the project.
 
-### Fix (if it happens): `ModuleNotFoundError: No module named 'pyenergyplus'`
+If you get `ModuleNotFoundError: No module named 'pyenergyplus'`, see
+[Troubleshooting → EnergyPlus Python API not detected](#energyplus-python-api-not-detected).
 
-
-If the quick check fails with:
-
-```text
-ModuleNotFoundError: No module named 'pyenergyplus'
-```
-
-it usually means EnergyPlus is installed, but its Python API folder is not on your Python path.
-
-EnergyPlus ships the `pyenergyplus` package inside the EnergyPlus installation directory (it is not installed via `pip`).
-
-To make it work, you must add:
-
-- the EnergyPlus install folder to `PYTHONPATH` (so Python can import `pyenergyplus`)
-- the EnergyPlus install folder to `PATH` (so Windows can find required DLLs) 
-
-Permanent fix (recommended for Conda environments), this makes the variables load automatically every time you activate the conda env.
-
-**Windows (Anaconda Prompt)**
-
-1. Activate your conda environment:
-
-```bash
-conda activate eplus_test
-```
-
-2. Create activation/deactivation folders:
-
-```bash
-mkdir "%CONDA_PREFIX%\etc\conda\activate.d"
-mkdir "%CONDA_PREFIX%\etc\conda\deactivate.d"
-```
-
-3. Create the activation script:
-
-```bash
-notepad "%CONDA_PREFIX%\etc\conda\activate.d\energyplus.bat"
-```
-
-Paste (edit `EPLUS_DIR` if needed):
-
-```bash
-@echo off
-set "EPLUS_DIR=C:\EnergyPlusV25-1-0"
-
-rem Save old values (so we can restore on deactivate)
-set "_OLD_PYTHONPATH=%PYTHONPATH%"
-set "_OLD_PATH=%PATH%"
-
-rem Add EnergyPlus to PYTHONPATH and PATH
-if exist "%EPLUS_DIR%\pyenergyplus" (
-  set "PYTHONPATH=%EPLUS_DIR%;%PYTHONPATH%"
-) else (
-  set "PYTHONPATH=%EPLUS_DIR%\PythonAPI;%PYTHONPATH%"
-)
-
-set "PATH=%EPLUS_DIR%;%PATH%"
-```
-
-4. Create the deactivation script:
-
-```bash
-notepad "%CONDA_PREFIX%\etc\conda\deactivate.d\energyplus.bat"
-```
-Paste:
-
-```bash
-@echo off
-set "PYTHONPATH=%_OLD_PYTHONPATH%"
-set "PATH=%_OLD_PATH%"
-set "_OLD_PYTHONPATH="
-set "_OLD_PATH="
-set "EPLUS_DIR="
-```
-
-5. Close and reopen Anaconda Prompt, activate env again, and test:
-
-```bash
-conda activate eplus_test
-python -c "from pyenergyplus.api import EnergyPlusAPI; print(EnergyPlusAPI)"
-```
 
 ---
 
@@ -405,8 +325,132 @@ After this, Spyder will:
 
 > Note: `runs/`, `eplus_outputs/`, `dist/`, `__pycache__/`, and `*.egg-info/` are generated during training/runs/build and are ignored by Git.
 
-
 ```
+
+
+
+Troubleshooting
+======================
+
+
+- [EnergyPlus Python API not detected](#energyplus-python-api-not-detected)
+
+
+## EnergyPlus Python API not detected
+
+
+### Fix (if it happens): `ModuleNotFoundError: No module named 'pyenergyplus'`
+
+
+If the quick check fails with:
+
+```text
+ModuleNotFoundError: No module named 'pyenergyplus'
+```
+
+it usually means EnergyPlus is installed, but its Python API folder is not on your Python path.
+
+EnergyPlus ships the `pyenergyplus` package inside the EnergyPlus installation directory (it is not installed via `pip`).
+
+To make it work, you must add:
+
+- the EnergyPlus install folder to `PYTHONPATH` (so Python can import `pyenergyplus`)
+- the EnergyPlus install folder to `PATH` (so Windows can find required DLLs) 
+
+Permanent fix (recommended for Conda environments), this makes the variables load automatically every time you activate the conda env.
+
+**Windows (Anaconda Prompt)**
+
+1. Activate your conda environment:
+
+```bash
+conda activate eplus_test
+```
+
+2. Create activation/deactivation folders:
+
+```bash
+mkdir "%CONDA_PREFIX%\etc\conda\activate.d"
+mkdir "%CONDA_PREFIX%\etc\conda\deactivate.d"
+```
+
+3. Create the activation script:
+
+```bash
+notepad "%CONDA_PREFIX%\etc\conda\activate.d\energyplus.bat"
+```
+
+Paste (edit `EPLUS_DIR` if needed):
+
+```bash
+@echo off
+set "EPLUS_DIR=C:\EnergyPlusV25-1-0"
+
+rem Save old values (so we can restore on deactivate)
+set "_OLD_PYTHONPATH=%PYTHONPATH%"
+set "_OLD_PATH=%PATH%"
+
+rem Add EnergyPlus to PYTHONPATH and PATH
+if exist "%EPLUS_DIR%\pyenergyplus" (
+  set "PYTHONPATH=%EPLUS_DIR%;%PYTHONPATH%"
+) else (
+  set "PYTHONPATH=%EPLUS_DIR%\PythonAPI;%PYTHONPATH%"
+)
+
+set "PATH=%EPLUS_DIR%;%PATH%"
+```
+
+4. Create the deactivation script:
+
+```bash
+notepad "%CONDA_PREFIX%\etc\conda\deactivate.d\energyplus.bat"
+```
+Paste:
+
+```bash
+@echo off
+set "PYTHONPATH=%_OLD_PYTHONPATH%"
+set "PATH=%_OLD_PATH%"
+set "_OLD_PYTHONPATH="
+set "_OLD_PATH="
+set "EPLUS_DIR="
+```
+
+5. Close and reopen Anaconda Prompt, activate env again, and test:
+
+```bash
+conda activate eplus_test
+python -c "from pyenergyplus.api import EnergyPlusAPI; print(EnergyPlusAPI)"
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #6. Cleaning up the test environment (optional)
 ----------------------------------------------
 

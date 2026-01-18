@@ -329,8 +329,7 @@ After this, Spyder will:
 
 
 
-Troubleshooting
-======================
+# Troubleshooting
 
 
 [](#energyplus-python-api-not-detected)

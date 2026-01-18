@@ -197,7 +197,7 @@ also install example dependencies:
 pip install -e ".[examples]"
 ```
 
-If `pip install` fails with a build error, see: [Troubleshooting → pip install fails with a build error](#subprocess-exited-with-error-link).
+If `pip install` fails with a build error, see: [T](#subprocess-exited-with-error-link).
 
 ### 4. Verify the installation
 
@@ -410,7 +410,7 @@ python -c "from pyenergyplus.api import EnergyPlusAPI; print(EnergyPlusAPI)"
 
 
 
-## pip install fails with a build error
+## T
 
 [](#subprocess-exited-with-error-link)
 

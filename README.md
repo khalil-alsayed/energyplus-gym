@@ -234,6 +234,10 @@ python -c "import eplus_gym; print('energyplus-gym imported successfully')"
 
 If this prints the message without errors, the installation works.
 
+
+---
+
+
 # Usage
 
 ## Using Spyder 
@@ -288,6 +292,7 @@ After this, Spyder will:
 - Use the Python and libraries from the `eplus_test` environment, and
 - Start in energyplus-gym\src\eplus_gym\agents, so all Python scripts and imports in that folder will work automatically.
 
+---
 
 # Project structure
 
@@ -327,6 +332,7 @@ After this, Spyder will:
 
 ```
 
+---
 
 
 # Troubleshooting

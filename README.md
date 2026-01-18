@@ -407,11 +407,11 @@ conda activate eplus_test
 python -c "from pyenergyplus.api import EnergyPlusAPI; print(EnergyPlusAPI)"
 ```
 
+[](#subprocess-exited-with-error0)
 
 
 ## pip install fails with a build error
 
-[](#subprocess-exited-with-error0)
 
 ### Fix (if it happens): `error: subprocess-exited-with-error` & `error: metadata-generation-failed`
 

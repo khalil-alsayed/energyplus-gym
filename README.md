@@ -20,6 +20,7 @@
   <strong>📣 Accepted at <a href="https://IECON2025.org" target="_blank">IECON 2025</a>, Madrid, Spain!</strong>
 </p>
 
+---
 
 # Table of Contents
 - [Features](#features)
@@ -34,6 +35,8 @@
 - [Troubleshooting](#troubleshooting)
 - [Citation](#citation)
 - [License](#license)
+
+---
 
 
 # Features
@@ -114,7 +117,7 @@ If you get `ModuleNotFoundError: No module named 'pyenergyplus'`, see
 [Troubleshooting → EnergyPlus Python API not detected](#energyplus-python-api-not-detected).
 
 
----
+
 
 ## Install package
 
@@ -194,45 +197,7 @@ also install example dependencies:
 pip install -e ".[examples]"
 ```
 
-
-### Fix (if it happens): `error: subprocess-exited-with-error` & `error: metadata-generation-failed`
-
-On Windows this usually happens when pip cannot find a prebuilt NumPy wheel that matches your Python, so it falls back to compiling (which needs Visual C++ Build Tools).
-
-1. Install Visual Studio Build Tools 2022
-
-- Select: Desktop development with C++
-- Make sure these are included:
-    - MSVC v143 build tools
-    - Windows 10/11 SDK
-
-2. Close and reopen Anaconda Prompt, then:
-   
-```bash
-conda activate eplus_test
-python -m pip install -U pip setuptools wheel
-pip install .
-pip install .[examples]
-```
- Or for Developer / contributor installation
-
-```bash
-conda activate eplus_test
-python -m pip install -U pip setuptools wheel
-pip install -e .
-pip install -e ".[examples]"
-```
-
-### 4. Verify the installation
-
-
-Run a quick import test:
-
-```bash
-python -c "import eplus_gym; print('energyplus-gym imported successfully')"
-```
-
-If this prints the message without errors, the installation works.
+If `pip install` fails with a build error, see: [Fix (if it happens): `subprocess-exited-with-error` / `metadata-generation-failed`](#subprocess-exited-with-error)
 
 
 ---
@@ -338,10 +303,12 @@ After this, Spyder will:
 # Troubleshooting
 
 
-[](#energyplus-python-api-not-detected)
+
 
 
 ## EnergyPlus Python API not detected
+
+[](#energyplus-python-api-not-detected)
 
 
 ### Fix (if it happens): `ModuleNotFoundError: No module named 'pyenergyplus'`
@@ -429,6 +396,49 @@ python -c "from pyenergyplus.api import EnergyPlusAPI; print(EnergyPlusAPI)"
 ```
 
 
+
+## `pip install` fails with a build error
+
+[](#subprocess-exited-with-error)
+
+### Fix (if it happens): `error: subprocess-exited-with-error` & `error: metadata-generation-failed`
+
+On Windows this usually happens when pip cannot find a prebuilt NumPy wheel that matches your Python, so it falls back to compiling (which needs Visual C++ Build Tools).
+
+1. Install Visual Studio Build Tools 2022
+
+- Select: Desktop development with C++
+- Make sure these are included:
+    - MSVC v143 build tools
+    - Windows 10/11 SDK
+
+2. Close and reopen Anaconda Prompt, then:
+   
+```bash
+conda activate eplus_test
+python -m pip install -U pip setuptools wheel
+pip install .
+pip install .[examples]
+```
+ Or for Developer / contributor installation
+
+```bash
+conda activate eplus_test
+python -m pip install -U pip setuptools wheel
+pip install -e .
+pip install -e ".[examples]"
+```
+
+### 4. Verify the installation
+
+
+Run a quick import test:
+
+```bash
+python -c "import eplus_gym; print('energyplus-gym imported successfully')"
+```
+
+If this prints the message without errors, the installation works.
 
 
 

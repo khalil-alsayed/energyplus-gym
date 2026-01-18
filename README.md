@@ -333,7 +333,7 @@ Troubleshooting
 ======================
 
 
-- [EnergyPlus Python API not detected](#energyplus-python-api-not-detected)
+[](#energyplus-python-api-not-detected)
 
 
 ## EnergyPlus Python API not detected

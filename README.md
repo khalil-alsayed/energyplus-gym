@@ -197,7 +197,7 @@ also install example dependencies:
 pip install -e ".[examples]"
 ```
 
-If `pip install` fails with a build error, see: [Troubleshooting → pip install fails with a build error](#subprocess-exited-with-error0)
+If `pip install` fails with a build error, see: [Troubleshooting → pip install fails with a build error](#subprocess-exited-with-error-link).
 
 ### 4. Verify the installation
 
@@ -407,10 +407,12 @@ conda activate eplus_test
 python -c "from pyenergyplus.api import EnergyPlusAPI; print(EnergyPlusAPI)"
 ```
 
-[](#subprocess-exited-with-error0)
+
 
 
 ## pip install fails with a build error
+
+[](#subprocess-exited-with-error-link)
 
 
 ### Fix (if it happens): `error: subprocess-exited-with-error` & `error: metadata-generation-failed`

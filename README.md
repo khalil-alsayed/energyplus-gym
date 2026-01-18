@@ -412,7 +412,7 @@ python -c "from pyenergyplus.api import EnergyPlusAPI; print(EnergyPlusAPI)"
 
 ## T
 
-[](#subprocess-exited-with-error-link)
+[T](#subprocess-exited-with-error-link)
 
 
 ### Fix (if it happens): `error: subprocess-exited-with-error` & `error: metadata-generation-failed`

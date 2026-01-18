@@ -412,7 +412,7 @@ python -c "from pyenergyplus.api import EnergyPlusAPI; print(EnergyPlusAPI)"
 
 ## pip install fails with a build error
 
-[pip install fails with a build error](#subprocess-exited-with-error-link)
+<a id="subprocess-exited-with-error-link"></a>
 
 
 ### Fix (if it happens): `error: subprocess-exited-with-error` & `error: metadata-generation-failed`

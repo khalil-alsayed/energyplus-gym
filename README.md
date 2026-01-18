@@ -197,7 +197,7 @@ also install example dependencies:
 pip install -e ".[examples]"
 ```
 
-If `pip install` fails with a build error, see: [Fix (if it happens): `subprocess-exited-with-error` / `metadata-generation-failed`](#subprocess-exited-with-error)
+If `pip install` fails with a build error, see: [Troubleshooting → `pip install` fails with a build error](#subprocess-exited-with-error)
 
 
 ---

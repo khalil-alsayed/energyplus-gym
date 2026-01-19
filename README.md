@@ -471,18 +471,17 @@ pip install -e ".[examples]"
 
 
 # Cleaning up the test environment (optional)
-----------------------------------------------
 
 If you created a temporary test setup (for example, the `eplus_test` Conda environment and a test clone of the repository) and you want to remove it, follow these steps.
 
-1 Close Spyder and terminals
-------------------------------
+## Close Spyder and terminals
+
 
 - Close Spyder so it is not using the `eplus_test` environment.
 - Close any Anaconda Prompt / terminal windows that are currently using that environment.
 
-2 Delete the `eplus_test` Conda environment
----------------------------------------------
+## Delete the `eplus_test` Conda environment
+
 
 1. Open Anaconda Prompt.
 2. List your environments (optional, just to see their names):
@@ -515,8 +514,7 @@ If you created additional test environments (for example `test_eplusgym`), you c
 conda remove --name test_eplusgym --all
 ```
 
-3 Delete the test copy of the project folder
-----------------------------------------------
+## Delete the test copy of the project folder
 
 If you made a separate test clone of the repository, for example:
 
@@ -533,14 +531,43 @@ Be careful not to delete your main project folder, which might be something like
 
 - C:\Users\<username>\Documents\energyplus-gym
 
-4 After these steps:
-------------------
+## After these steps:
+
 
 - Your original project and main Conda environment remain intact.
 - All temporary test environments and test clones are removed.
 
+---
 
-## License & Attribution
+# Citation
+
+If you use this repository in your research, please cite the paper(s) below:
+
+- **IEEE (IECON 2025)** — DOI: [10.1109/IECON58223.2025.11221485](https://doi.org/10.1109/IECON58223.2025.11221485)  
+- **TechRxiv preprint** — DOI: [10.36227/techrxiv.17628127.v1](https://doi.org/10.36227/techrxiv.17628127.v1)
+
+### BibTeX
+
+```bibtex
+@inproceedings{alsayed2025_attention_iecon,
+  title  = {Attention Makes HVAC Control More Efficient},
+  author = {Al Sayed, Khalil and Boodi, Abhinandana and Sadeghian Broujeny, Roozbeh and Beddiar, Karim},
+  year   = {2025},
+  doi    = {10.1109/IECON58223.2025.11221485},
+  note   = {IEEE IECON 2025}
+}
+
+@misc{alsayed2025_attention_techrxiv,
+  title  = {Attention Makes HVAC Control More Efficient},
+  author = {Al Sayed, Khalil and Boodi, Abhinandana and Sadeghian Broujeny, Roozbeh and Beddiar, Karim},
+  year   = {2025},
+  doi    = {10.36227/techrxiv.17628127.v1},
+  note   = {TechRxiv preprint}
+}
+
+---
+
+# License 
 
 This project is licensed under the **Khalil Al Sayed Community Research License**. 
 See the `LICENSE` file for full terms.

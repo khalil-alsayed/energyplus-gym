@@ -32,7 +32,7 @@
   - [Training scripts](#training-scripts)
 - [Project structure](#project-structure)
 - [Troubleshooting](#troubleshooting)
-- [Cleaning up the test environment (optional)](#cleaning-up)
+- [Cleaning up the test environment (optional)](#cleaning-up-the-test-environment-(optional))
 - [Citation](#citation)
 - [License](#license)
 
@@ -565,6 +565,7 @@ If you use this repository in your research, please cite the paper(s) below:
   note   = {TechRxiv preprint}
 }
 
+```
 ---
 
 # License 

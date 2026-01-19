@@ -32,7 +32,7 @@
   - [Training scripts](#training-scripts)
 - [Project structure](#project-structure)
 - [Troubleshooting](#troubleshooting)
-- [Cleaning up the test environment (optional)](#cleaning-up-the-test-environment-(-optional-))
+- [Cleaning up the test environment](#cleaning-up-the-test-environment)
 - [Citation](#citation)
 - [License](#license)
 
@@ -470,7 +470,7 @@ pip install -e ".[examples]"
 ---
 
 
-# Cleaning up the test environment (optional)
+# Cleaning up the test environment
 
 If you created a temporary test setup (for example, the `eplus_test` Conda environment and a test clone of the repository) and you want to remove it, follow these steps.
 

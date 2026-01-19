@@ -27,12 +27,12 @@
 - [Installation](#installation)
   - [Requirements](#requirements)
   - [Install package](#install-package)
-  - [Verify install](#verify-install)
 - [Usage](#usage)
   - [Minimal env usage](#minimal-env-usage)
   - [Training scripts](#training-scripts)
 - [Project structure](#project-structure)
 - [Troubleshooting](#troubleshooting)
+- [Cleaning up the test environment (optional)](#cleaning-up)
 - [Citation](#citation)
 - [License](#license)
 
@@ -467,21 +467,21 @@ pip install -e ".[examples]"
 
 
 
+---
 
 
-
-#6. Cleaning up the test environment (optional)
+# Cleaning up the test environment (optional)
 ----------------------------------------------
 
 If you created a temporary test setup (for example, the `eplus_test` Conda environment and a test clone of the repository) and you want to remove it, follow these steps.
 
-6.1 Close Spyder and terminals
+1 Close Spyder and terminals
 ------------------------------
 
 - Close Spyder so it is not using the `eplus_test` environment.
 - Close any Anaconda Prompt / terminal windows that are currently using that environment.
 
-6.2 Delete the `eplus_test` Conda environment
+2 Delete the `eplus_test` Conda environment
 ---------------------------------------------
 
 1. Open Anaconda Prompt.
@@ -515,7 +515,7 @@ If you created additional test environments (for example `test_eplusgym`), you c
 conda remove --name test_eplusgym --all
 ```
 
-6.3 Delete the test copy of the project folder
+3 Delete the test copy of the project folder
 ----------------------------------------------
 
 If you made a separate test clone of the repository, for example:
@@ -533,7 +533,7 @@ Be careful not to delete your main project folder, which might be something like
 
 - C:\Users\<username>\Documents\energyplus-gym
 
-After these steps:
+4 After these steps:
 ------------------
 
 - Your original project and main Conda environment remain intact.

@@ -32,7 +32,7 @@
   - [Training scripts](#training-scripts)
 - [Project structure](#project-structure)
 - [Troubleshooting](#troubleshooting)
-- [Cleaning up the test environment (optional)](#cleaning-up-the-test-environment-(optional))
+- [Cleaning up the test environment (optional)](#cleaning-up-the-test-environment-(-optional-))
 - [Citation](#citation)
 - [License](#license)
 

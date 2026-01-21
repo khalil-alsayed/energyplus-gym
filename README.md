@@ -44,7 +44,7 @@
 
 <p align="center">
   <a>
-    <img src="https://github.com/khalil-alsayed/energyplus-gym/blob/main/logo/abstract.png" width="400"/>
+    <img src="https://github.com/khalil-alsayed/energyplus-gym/blob/main/logo/abstract.png" width="800"/>
   </a>
 </p>
 

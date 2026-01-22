@@ -48,6 +48,20 @@
   </a>
 </p>
 
+<p align="center">
+  <a>
+    <img src="https://github.com/khalil-alsayed/energyplus-gym/blob/main/logo/transformer5.png" width="800"/>
+  </a>
+</p>
+
+<p align="center">
+  <a>
+    <img src="https://github.com/khalil-alsayed/energyplus-gym/blob/main/logo/brain.png" width="800"/>
+  </a>
+</p>
+
+
+
 
 **energyplus-gym** is a lightweight **Gymnasium-compatible** Python toolkit for running **EnergyPlus** simulations as reinforcement-learning environments for **HVAC control**. It provides a reproducible sandbox to train and evaluate deep RL agents on a realistic building case study (a **400 m² university amphitheatre**) by controlling key AHU variables such as **supply-air temperature setpoint, outdoor-air mass flow rate, and AHU ON/OFF**. 
 

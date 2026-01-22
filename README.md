@@ -50,7 +50,7 @@
 
 <p align="center">
   <a>
-    <img src="https://github.com/khalil-alsayed/energyplus-gym/blob/main/logo/transformer5.png" width="800"/>
+    <img src="https://github.com/khalil-alsayed/energyplus-gym/blob/main/logo/transformer5.jpg" width="800"/>
   </a>
 </p>
 
